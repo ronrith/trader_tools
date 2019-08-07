@@ -9,8 +9,19 @@
 </head>
 <body>
 <style>
-	.menu, .content { width: 30%; display: inline-block; vertical-align: top;  }
-	.content { width: 68%; display: inline-block; vertical-align: top; }
+	.app ul {
+		padding: 0px;
+	}
+	.app ul li{
+		padding-left: 0px;
+		text-decoration: underline;
+		color: blue;
+		cursor: pointer;
+	}
+	.menu, .content { width: 20%; display: inline-block; vertical-align: top;  }
+	.content { width: 78%; display: inline-block; vertical-align: top; }
+	.content img { width: 95% }
+
 </style>
 <div id="app" class="app">
 	<div class="menu">
@@ -20,11 +31,20 @@
 		<button v-on:click="addStock()">Add</button>
 		<br>
 		<ul>
-			<li v-for="item in group">{{item.title}}</li>
+			<li v-for="(item, index) in group" v-on:click="setCurrentGroup(item)">
+				{{item.title}}
+				<button v-on:click.prevent="removeItem(index)"> X </button>
+			</li>
 		</ul>
 	</div>
 	<div class="content">
-		<button v-on:click="getStock()">Test</button>
+		<b>{{currentGroup.title}}</b>
+		<div v-for="(item, index) in currentStock">
+			<a :href="'https://stockcharts.com/h-sc/ui?s=' + item" target="_blank">
+				<img :src="'https://finviz.com/chart.ashx?t=' + item + '&ta=1&p=d&s=m'" alt="">
+			</a>
+			<a :href="'https://finviz.com/quote.ashx?&ty=c&p=d&b=1&t=' + item" target="_blank">FINVIZ</a>
+		</div>
 	</div>
 </div>
 
@@ -36,6 +56,8 @@
 		data: {
 			name: '',
 			group: [],
+			currentGroup: {},
+			currentStock: [],
 			iTitle: '',
 			iStocks: ''
 		},
@@ -46,6 +68,14 @@
 				this.iStocks = '';
 			},
 
+			removeItem: function(index) {
+				console.log(index);
+				this.group.splice(index,1);
+			},
+			setCurrentGroup: function(item) {
+				this.currentGroup = item;
+				console.log(item);
+			},
 			setGroup: function() {
 				localStorage.group = JSON.stringify(this.group);
 				console.log('updated.');
@@ -64,6 +94,9 @@
 		watch: {
 			group() {
 				this.setGroup();
+			},
+			currentGroup() {
+				this.currentStock = this.currentGroup.stocks.split(",");
 			}
 		}
 	})
