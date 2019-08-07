@@ -8,6 +8,65 @@
 	<title>Trader Tools</title>
 </head>
 <body>
+<style>
+	.menu, .content { width: 30%; display: inline-block; vertical-align: top;  }
+	.content { width: 68%; display: inline-block; vertical-align: top; }
+</style>
+<div id="app" class="app">
+	<div class="menu">
+		Add Symbols <br>
+		<input type="text" placeholder="Group Title" v-model="iTitle">
+		<input type="text" placeholder="Symbols" v-model="iStocks"> <br>
+		<button v-on:click="addStock()">Add</button>
+		<br>
+		<ul>
+			<li v-for="item in group">{{item.title}}</li>
+		</ul>
+	</div>
+	<div class="content">
+		<button v-on:click="getStock()">Test</button>
+	</div>
+</div>
 
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+<script>
+	var app = new Vue({
+		el: '#app',
+		data: {
+			name: '',
+			group: [],
+			iTitle: '',
+			iStocks: ''
+		},
+		methods: {
+			addStock: function () {
+				this.group.push({title: this.iTitle, stocks: this.iStocks});
+				this.iTitle = '';
+				this.iStocks = '';
+			},
+
+			setGroup: function() {
+				localStorage.group = JSON.stringify(this.group);
+				console.log('updated.');
+			},
+
+			getGroup: function() {
+				this.group = JSON.parse(localStorage.group);
+			}
+		},
+		mounted() {
+			if (localStorage.group) {
+				console.log(localStorage.group);
+				this.getGroup();
+			}
+		},
+		watch: {
+			group() {
+				this.setGroup();
+			}
+		}
+	})
+</script>
 </body>
 </html>
