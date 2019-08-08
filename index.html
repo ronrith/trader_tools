@@ -18,28 +18,35 @@
 		color: blue;
 		cursor: pointer;
 	}
-	.menu, .content { width: 20%; display: inline-block; vertical-align: top;  }
-	.content { width: 78%; display: inline-block; vertical-align: top; }
+	.menu, .content { vertical-align: top;  }
+	.content { vertical-align: top; }
 	.content img { width: 95% }
+	.stock-content {
+		border: 1px solid gray;
+		padding: 10px;
+		border-radius: 14px;
+	}
+
 
 </style>
 <div id="app" class="app">
 	<div class="menu">
-		Add Symbols <br>
+		<select ref="groupList" @change="setCurrentGroup" v-model="selectedGroup">
+			<option v-for="(item, index) in group">{{item.title}}</option>
+		</select>
+		<button v-on:click="removeGroup()">x</button>
+		| Add Group :
 		<input type="text" placeholder="Group Title" v-model="iTitle">
-		<input type="text" placeholder="Symbols" v-model="iStocks"> <br>
+		<input type="text" placeholder="Symbols" v-model="iStocks" size="20">
 		<button v-on:click="addStock()">Add</button>
-		<br>
-		<ul>
-			<li v-for="(item, index) in group" v-on:click="setCurrentGroup(item)">
-				{{item.title}}
-				<button v-on:click.prevent="removeItem(index)"> X </button>
-			</li>
-		</ul>
+		<hr>
+	</div>
+	<div style="text-align: center">
+		<a :href="'https://finviz.com/screener.ashx?v=111&o=-change&t='+currentGroup.stocks" target="_blank">{{currentGroup.stocks}}</a>
 	</div>
 	<div class="content">
 		<b>{{currentGroup.title}}</b>
-		<div v-for="(item, index) in currentStock">
+		<div v-for="(item, index) in currentStock" class="stock-content">
 			<a :href="'https://stockcharts.com/h-sc/ui?s=' + item" target="_blank">
 				<img :src="'https://finviz.com/chart.ashx?t=' + item + '&ta=1&p=d&s=m'" alt="">
 			</a>
@@ -59,22 +66,24 @@
 			currentGroup: {},
 			currentStock: [],
 			iTitle: '',
-			iStocks: ''
+			iStocks: '',
+			selectedGroup: ''
 		},
 		methods: {
 			addStock: function () {
-				this.group.push({title: this.iTitle, stocks: this.iStocks});
+				var iTitle = !this.iTitle ? this.genGroupTitle() : this.iTitle;
+				this.group.push({title: iTitle, stocks: this.iStocks});
+				console.log(iTitle);
+
 				this.iTitle = '';
 				this.iStocks = '';
 			},
 
-			removeItem: function(index) {
-				console.log(index);
-				this.group.splice(index,1);
+			removeGroup: function() {
+				this.group.splice(this.$refs.groupList.selectedIndex,1);
 			},
-			setCurrentGroup: function(item) {
-				this.currentGroup = item;
-				console.log(item);
+			setCurrentGroup: function(event) {
+				this.currentGroup = this.group[event.target.selectedIndex];
 			},
 			setGroup: function() {
 				localStorage.group = JSON.stringify(this.group);
@@ -83,12 +92,18 @@
 
 			getGroup: function() {
 				this.group = JSON.parse(localStorage.group);
+			},
+
+			genGroupTitle: function() {
+				var date = new Date();
+				return date.getFullYear() + '-' + (date.getMonth()+1) + '-' + date.getDay();
 			}
 		},
 		mounted() {
 			if (localStorage.group) {
 				console.log(localStorage.group);
 				this.getGroup();
+				console.log(this.genGroupTitle());
 			}
 		},
 		watch: {
