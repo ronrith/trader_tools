@@ -25,13 +25,12 @@
 		border: 1px solid gray;
 		padding: 10px;
 		border-radius: 14px;
+		text-align: center;
 	}
-
-
 </style>
 <div id="app" class="app">
 	<div class="menu">
-		<select ref="groupList" @change="setCurrentGroup" v-model="selectedGroup">
+		<select ref="groupList" @change="setCurrentGroup" v-model="selectedGroup"> -
 			<option v-for="(item, index) in group">{{item.title}}</option>
 		</select>
 		<button v-on:click="removeGroup()">x</button>
@@ -47,10 +46,12 @@
 	<div class="content">
 		<b>{{currentGroup.title}}</b>
 		<div v-for="(item, index) in currentStock" class="stock-content">
-			<a :href="'https://stockcharts.com/h-sc/ui?s=' + item" target="_blank">
+			<a :href="'https://stockcharts.com/h-sc/ui?s=' + item + '&p=D&b=5&g=0&id=p33849936437'" target="_blank">
 				<img :src="'https://finviz.com/chart.ashx?t=' + item + '&ta=1&p=d&s=m'" alt="">
 			</a>
-			<a :href="'https://finviz.com/quote.ashx?&ty=c&p=d&b=1&t=' + item" target="_blank">FINVIZ</a>
+			<br>
+			<a :href="'https://finviz.com/quote.ashx?&ty=c&p=d&b=1&t=' + item.trim()" target="_blank">FV</a>
+			<a :href="'https://markets.businessinsider.com/analyst/' + item.trim()" target="_blank">Market Analyst</a>
 		</div>
 	</div>
 </div>
@@ -67,7 +68,13 @@
 			currentStock: [],
 			iTitle: '',
 			iStocks: '',
-			selectedGroup: ''
+			selectedGroup: '',
+			defaultConfig: `chart,FV-T,https://finviz.com/chart.ashx?t=$sym&ta=1&p=d&s=m,link
+chart,FV-CD,https://finviz.com/chart.ashx?t=$sym&ty=c&p=d&s=m&ta=0,
+chart,FV-CW,https://finviz.com/chart.ashx?t=$sym&ty=c&p=w&s=m&ta=0,
+chart,FV-CM,https://finviz.com/chart.ashx?t=$sym&ty=c&p=m&s=m&ta=0,
+chart,SC-1,https://c.stockcharts.com/c-sc/sc?s=$sym&p=D&b=5&g=0&i=t6289384001c&r=1565369783858,https://stockcharts.com/h-sc/ui?s=$sym&p=D&b=5&g=0&id=p33849936437
+link,Ratings,https://markets.businessinsider.com/analyst/$sym`
 		},
 		methods: {
 			addStock: function () {
@@ -101,6 +108,7 @@
 		},
 		mounted() {
 			if (localStorage.group) {
+				console.log(this.defaultConfig);
 				console.log(localStorage.group);
 				this.getGroup();
 				console.log(this.genGroupTitle());
