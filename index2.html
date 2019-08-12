@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Trader Tools</title>
+</head>
+<body>
+<style>
+	.group-content {
+		display: inline-block;
+		width: 100%;
+		max-width: 500px;
+		border: 1px solid #f2f2f2;
+		border-radius: 6px;
+	}
+</style>
+<div id="app" class="app">
+	<div class="content">
+		<div v-for="(item, index) in groupData" class="group-content">
+			<div>{{item.stockIndex + 1}} | {{item.stock.length}} | {{item.stock[item.stockIndex].symbol}}</div>
+			<button v-for="(chartItem, chartItemIndex2) in chartData" v-on:click="item.chartIndex=chartItemIndex2">{{chartItem.title}}</button>
+			<img :src="stockCurrentChart(index)" alt="" width="100%">
+
+			<button v-on:click="stockNext(index)">Next</button>
+		</div>
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+<script>
+	var app = new Vue({
+		el: '#app',
+		data: {
+			chartData: [
+				{title: "A", path: "https://finviz.com/chart.ashx?t=$sym&ty=c&ta=1&p=d&s=l"},
+				{title: "D", path: "https://finviz.com/chart.ashx?t=$sym&ty=c&ta=0&p=d&s=l"},
+				{title: "W", path: "https://finviz.com/chart.ashx?t=$sym&ty=c&ta=0&p=w&s=l"},
+			],
+			groupData:  [
+				{
+					title: "Group 1",
+					stock: [
+						{symbol: "aapl", note: "", star: false, price: 0, entry: 0, stop: 0},
+						{symbol: "tsla", note: "", star: false, price: 0, entry: 0, stop: 0},
+						{symbol: "ibm", note: "", star: false, price: 0, entry: 0, stop: 0},
+					],
+					stockIndex: 0,
+					chartIndex: 0
+				},
+				{
+					title: "Group 2",
+					stock: [
+						{symbol: "aapl", note: "", star: false, price: 0, entry: 0, stop: 0},
+						{symbol: "tsla", note: "", star: false, price: 0, entry: 0, stop: 0},
+						{symbol: "ibm", note: "", star: false, price: 0, entry: 0, stop: 0},
+					],
+					stockIndex: 0,
+					chartIndex: 1,
+					chart: [
+						{title: "D", path: "https://finviz.com/chart.ashx?t=$sym&ta=1&p=d&s=m"},
+						{title: "W", path: "https://finviz.com/chart.ashx?t=$sym&ta=1&p=w&s=m"},
+					],
+				}
+			],
+		},
+		methods: {
+			stockNext: function(groupIndex) {
+				if (this.groupData[groupIndex].stockIndex < this.groupData[groupIndex].stock.length - 1) {
+					this.groupData[groupIndex].stockIndex++;
+					return;
+				}
+				this.groupData[groupIndex].stockIndex = 0;
+			},
+
+			stockCurrentChart: function(groupIndex) {
+				var currentGroup = this.groupData[groupIndex];
+				var currentSym = currentGroup.stock[currentGroup.stockIndex].symbol;
+				console.log(currentGroup, currentSym);
+				return this.chartData[currentGroup.chartIndex].path.replace('$sym', currentSym);
+			}
+		},
+		mounted() {
+		},
+		watch: {
+		}
+	})
+</script>
+</body>
+</html>
