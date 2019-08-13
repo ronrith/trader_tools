@@ -26,12 +26,20 @@
 </style>
 <div id="app" class="app">
 	<div class="content">
+		<div>
+			<span style="float: left"><a href="#" v-on:click="newGroup()">New Group</a></span>
+			<span style="float: right">Reset: <a href="#" v-on:click="appData.chartData = defaultData.chartData">chart</a> | <a href="#" v-on:click="appData = defaultData">app</a></span>
+		</div>
 		<div v-for="(item, index) in appData.groupData" class="group-content" v-on:keyup="keymonitor($event, item)">
 			Add quotes: <input type="" name="" v-model="item.inputAdd"><button v-on:click="addQuotes(item)">Add</button>
+			<span style="float: right">
+				<button v-on:click="appData.groupData.splice(index,1)">X</button>
+			</span>
+
 			<div v-if="item.stock.length > 0">
 				<span style="float: left"><button v-for="(chartItem, chartItemIndex2) in appData.chartData" v-on:click="item.chartIndex=chartItemIndex2">{{chartItem.title}}</button></span>
-				<span style="float: right"><button v-on:click="stockDelete(item)">X</button></span>
-				<a :href="stockCurrentChartLink(index)" target="_blank"><img :src="stockCurrentChart(index)" alt="" width="100%"></a>
+				<span style="float: right"><button v-on:click="stockDelete(item)">Delete Stock</button></span>
+				<a :href="stockCurrentChartLink(item)" target="_blank"><img :src="stockCurrentChart(item)" alt="" width="100%"></a>
 			</div>
 			<span style="float: left"><button v-on:click="stockPrev(item)">< Prev</button></span>
 			<span style="float: right"><button v-on:click="stockNext(item)">Next ></button></span>
@@ -67,21 +75,6 @@
 						stockIndex: 0,
 						chartIndex: 0,
 						inputAdd: '',
-					},
-					{
-						title: "Group 2",
-						stock: [
-							{symbol: "spy", note: "", star: false, price: 0, entry: 0, stop: 0},
-							{symbol: "psj", note: "", star: false, price: 0, entry: 0, stop: 0},
-							{symbol: "tna", note: "", star: false, price: 0, entry: 0, stop: 0},
-						],
-						stockIndex: 0,
-						chartIndex: 1,
-						chart: [
-							{title: "D", path: "https://finviz.com/chart.ashx?t=$sym&ta=1&p=d&s=m"},
-							{title: "W", path: "https://finviz.com/chart.ashx?t=$sym&ta=1&p=w&s=m"},
-						],
-						inputAdd: '',
 					}
 				],
 
@@ -89,8 +82,8 @@
 					{title: "A", path: "https://finviz.com/chart.ashx?t=$sym&ty=c&ta=1&p=d&s=l", link: "https://finviz.com/quote.ashx?t=$sym&ty=c&p=d&b=1"},
 					{title: "D", path: "https://finviz.com/chart.ashx?t=$sym&ty=c&ta=0&p=d&s=l", link: "https://finviz.com/quote.ashx?t=$sym&ty=c&p=d&b=1"},
 					{title: "W", path: "https://finviz.com/chart.ashx?t=$sym&ty=c&ta=0&p=w&s=l", link: "https://finviz.com/quote.ashx?t=$sym&ty=c&p=d&b=1"},
-					{title: "SC", path: "http://c.stockcharts.com/c-sc/sc?s=$sym&p=D&b=5&g=0&i=t4170851807c&r=1565646183323", link: "https://finviz.com/quote.ashx?t=$symty=c&p=d&b=1"},
-					{title: "SC2", path: "http://c.stockcharts.com/c-sc/sc?s=$sym&p=D&b=5&g=0&i=p38909188862&r=1565646119587", link: "https://finviz.com/quote.ashx?t=$sym&ty=c&p=d&b=1"}
+					{title: "SD", path: "https://c.stockcharts.com/c-sc/sc?s=$sym&p=D&b=5&g=0&i=t2511577949c&r=1565724541108", link: "https://stockcharts.com/h-sc/ui?s=$spy&p=D&b=5&g=0&id=p96056893041"},
+					{title: "SW", path: "https://c.stockcharts.com/c-sc/sc?s=$sym&p=W&b=5&g=0&i=t9677531400c&r=1565724650031", link: "https://stockcharts.com/h-sc/ui?s=SPY&p=W&b=5&g=0&id=p39695989015"}
 
 				],
 			},
@@ -150,18 +143,16 @@
 				groupData.chartIndex++;
 			},
 
-			stockCurrentChart: function(groupIndex) {
-				if (!this.appData.groupData[groupIndex].stock.length > 0) return;
-
-				var currentGroup = this.appData.groupData[groupIndex];
-				var currentSym = currentGroup.stock[currentGroup.stockIndex].symbol;
-				return this.appData.chartData[currentGroup.chartIndex].path.replace('$sym', currentSym);
+			stockCurrentChart: function(groupData) {
+				if (!groupData.stock.length > 0) return;
+				var symbol = groupData.stock[groupData.stockIndex].symbol;
+				return this.appData.chartData[groupData.chartIndex].path.replace('$sym', symbol.trim());
 			},
 
-			stockCurrentChartLink: function(groupIndex) {
-				var currentGroup = this.appData.groupData[groupIndex];
-				var currentSym = currentGroup.stock[currentGroup.stockIndex].symbol;
-				return this.appData.chartData[currentGroup.chartIndex].link.replace('$sym', currentSym);
+			stockCurrentChartLink: function(groupData) {
+				if (!groupData.stock.length > 0) return;
+				var symbol = groupData.stock[groupData.stockIndex].symbol;
+				return this.appData.chartData[groupData.chartIndex].link.replace('$sym', symbol.trim());
 			},
 
 			getAppData: function() {
@@ -204,10 +195,21 @@
 				}
 
 				return list;
+			},
+
+			newGroup: function () {
+				this.appData.groupData.push({
+					title: "",
+					stock: [
+						{symbol: "spy", note: "", star: false, price: 0, entry: 0, stop: 0},
+					],
+					stockIndex: 0,
+					chartIndex: 0,
+					inputAdd: '',
+				});
 			}
 		},
 		mounted() {
-			//this.appData = this.defaultData; return;
 			if (localStorage.appData) {
 				this.getAppData();
 			} else {
