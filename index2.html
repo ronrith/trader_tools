@@ -9,10 +9,14 @@
 </head>
 <body>
 <style>
+	.content {
+		text-align: center;
+	}
 	.group-content {
+		margin: 0px auto 0px;
 		display: inline-block;
 		width: 100%;
-		max-width: 500px;
+		max-width: 750px;
 		border: 1px solid #f2f2f2;
 		border-radius: 6px;
 	}
@@ -20,11 +24,13 @@
 <div id="app" class="app">
 	<div class="content">
 		<div v-for="(item, index) in groupData" class="group-content">
-			<div>{{item.stockIndex + 1}} | {{item.stock.length}} | {{item.stock[item.stockIndex].symbol}}</div>
-			<button v-for="(chartItem, chartItemIndex2) in chartData" v-on:click="item.chartIndex=chartItemIndex2">{{chartItem.title}}</button>
+			Add quotes: <input type="" name="" v-on:click="stockNext(index)"> <button>Add</button>
+			<span>{{item.stockIndex + 1}} | {{item.stock.length}} | {{item.stock[item.stockIndex].symbol}}</span>
+			<span style="float: right"><button v-for="(chartItem, chartItemIndex2) in chartData" v-on:click="item.chartIndex=chartItemIndex2">{{chartItem.title}}</button>		
+			</span>
 			<img :src="stockCurrentChart(index)" alt="" width="100%">
 
-			<button v-on:click="stockNext(index)">Next</button>
+			<span style="float: right"><button v-on:click="stockNext(index)">Next</button></span>
 		</div>
 	</div>
 </div>
@@ -37,8 +43,8 @@
 				{title: "A", path: "https://finviz.com/chart.ashx?t=$sym&ty=c&ta=1&p=d&s=l"},
 				{title: "D", path: "https://finviz.com/chart.ashx?t=$sym&ty=c&ta=0&p=d&s=l"},
 				{title: "W", path: "https://finviz.com/chart.ashx?t=$sym&ty=c&ta=0&p=w&s=l"},
-				{title: "SC", path: "https://c.stockcharts.com/c-sc/sc?s=$sym&p=D&b=5&g=0&i=t4170851807c&r=1565646183323"},
-				{title: "SC2", path: "https://c.stockcharts.com/c-sc/sc?s=$sym&p=D&b=5&g=0&i=p38909188862&r=1565646119587"}
+				{title: "SC", path: "http://c.stockcharts.com/c-sc/sc?s=$sym&p=D&b=5&g=0&i=t4170851807c&r=1565646183323"},
+				{title: "SC2", path: "http://c.stockcharts.com/c-sc/sc?s=$sym&p=D&b=5&g=0&i=p38909188862&r=1565646119587"}
 
 			],
 			groupData:  [
