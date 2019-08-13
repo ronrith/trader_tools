@@ -16,21 +16,35 @@
 		margin: 0px auto 0px;
 		display: inline-block;
 		width: 100%;
-		max-width: 750px;
+		max-width: 650px;
 		border: 1px solid #f2f2f2;
 		border-radius: 6px;
+	}
+	.prices input {
+		width: 45px;
 	}
 </style>
 <div id="app" class="app">
 	<div class="content">
-		<div v-for="(item, index) in groupData" class="group-content">
-			Add quotes: <input type="" name="" v-on:click="stockNext(index)"> <button>Add</button>
-			<span>{{item.stockIndex + 1}} | {{item.stock.length}} | {{item.stock[item.stockIndex].symbol}}</span>
-			<span style="float: right"><button v-for="(chartItem, chartItemIndex2) in chartData" v-on:click="item.chartIndex=chartItemIndex2">{{chartItem.title}}</button>		
-			</span>
-			<img :src="stockCurrentChart(index)" alt="" width="100%">
+		<div v-for="(item, index) in appData.groupData" class="group-content" v-on:keyup="keymonitor($event, item)">
+			Add quotes: <input type="" name="" v-model="item.inputAdd"><button v-on:click="addQuotes(item)">Add</button>
+			<div v-if="item.stock.length > 0">
+				<span style="float: left"><button v-for="(chartItem, chartItemIndex2) in appData.chartData" v-on:click="item.chartIndex=chartItemIndex2">{{chartItem.title}}</button></span>
+				<span style="float: right"><button v-on:click="stockDelete(item)">X</button></span>
+				<a :href="stockCurrentChartLink(index)" target="_blank"><img :src="stockCurrentChart(index)" alt="" width="100%"></a>
+			</div>
+			<span style="float: left"><button v-on:click="stockPrev(item)">< Prev</button></span>
+			<span style="float: right"><button v-on:click="stockNext(item)">Next ></button></span>
+			<span v-if="item.stock.length > 0"><b style="text-transform: uppercase">{{item.stock[item.stockIndex].symbol}}</b> ({{item.stockIndex + 1}}/{{item.stock.length}})</span>
 
-			<span style="float: right"><button v-on:click="stockNext(index)">Next</button></span>
+			<div v-if="item.stock.length > 0" class="prices">
+					Price: <input type="text" v-model="item.stock[item.stockIndex].price">
+					Entry: <input type="text" v-model="item.stock[item.stockIndex].entry">
+					Stop: <input type="text" v-model="item.stock[item.stockIndex].entry">
+					<select name="" id="">
+						<option v-for="(item, index) in genPriceRange(item.stock[item.stockIndex].price)">{{item}}</option>
+					</select>
+			</div>
 		</div>
 	</div>
 </div>
@@ -39,60 +53,171 @@
 	var app = new Vue({
 		el: '#app',
 		data: {
-			chartData: [
-				{title: "A", path: "https://finviz.com/chart.ashx?t=$sym&ty=c&ta=1&p=d&s=l"},
-				{title: "D", path: "https://finviz.com/chart.ashx?t=$sym&ty=c&ta=0&p=d&s=l"},
-				{title: "W", path: "https://finviz.com/chart.ashx?t=$sym&ty=c&ta=0&p=w&s=l"},
-				{title: "SC", path: "http://c.stockcharts.com/c-sc/sc?s=$sym&p=D&b=5&g=0&i=t4170851807c&r=1565646183323"},
-				{title: "SC2", path: "http://c.stockcharts.com/c-sc/sc?s=$sym&p=D&b=5&g=0&i=p38909188862&r=1565646119587"}
+			appData: {},
 
-			],
-			groupData:  [
-				{
-					title: "Group 1",
-					stock: [
-						{symbol: "aapl", note: "", star: false, price: 0, entry: 0, stop: 0},
-						{symbol: "tsla", note: "", star: false, price: 0, entry: 0, stop: 0},
-						{symbol: "ibm", note: "", star: false, price: 0, entry: 0, stop: 0},
-					],
-					stockIndex: 0,
-					chartIndex: 0
-				},
-				{
-					title: "Group 2",
-					stock: [
-						{symbol: "aapl", note: "", star: false, price: 0, entry: 0, stop: 0},
-						{symbol: "tsla", note: "", star: false, price: 0, entry: 0, stop: 0},
-						{symbol: "ibm", note: "", star: false, price: 0, entry: 0, stop: 0},
-					],
-					stockIndex: 0,
-					chartIndex: 1,
-					chart: [
-						{title: "D", path: "https://finviz.com/chart.ashx?t=$sym&ta=1&p=d&s=m"},
-						{title: "W", path: "https://finviz.com/chart.ashx?t=$sym&ta=1&p=w&s=m"},
-					],
-				}
-			],
+			defaultData: {
+				groupData:  [
+					{
+						title: "",
+						stock: [
+							{symbol: "spy", note: "", star: false, price: 0, entry: 0, stop: 0},
+							{symbol: "psj", note: "", star: false, price: 0, entry: 0, stop: 0},
+							{symbol: "tna", note: "", star: false, price: 0, entry: 0, stop: 0},
+						],
+						stockIndex: 0,
+						chartIndex: 0,
+						inputAdd: '',
+					},
+					{
+						title: "Group 2",
+						stock: [
+							{symbol: "spy", note: "", star: false, price: 0, entry: 0, stop: 0},
+							{symbol: "psj", note: "", star: false, price: 0, entry: 0, stop: 0},
+							{symbol: "tna", note: "", star: false, price: 0, entry: 0, stop: 0},
+						],
+						stockIndex: 0,
+						chartIndex: 1,
+						chart: [
+							{title: "D", path: "https://finviz.com/chart.ashx?t=$sym&ta=1&p=d&s=m"},
+							{title: "W", path: "https://finviz.com/chart.ashx?t=$sym&ta=1&p=w&s=m"},
+						],
+						inputAdd: '',
+					}
+				],
+
+				chartData: [
+					{title: "A", path: "https://finviz.com/chart.ashx?t=$sym&ty=c&ta=1&p=d&s=l", link: "https://finviz.com/quote.ashx?t=$sym&ty=c&p=d&b=1"},
+					{title: "D", path: "https://finviz.com/chart.ashx?t=$sym&ty=c&ta=0&p=d&s=l", link: "https://finviz.com/quote.ashx?t=$sym&ty=c&p=d&b=1"},
+					{title: "W", path: "https://finviz.com/chart.ashx?t=$sym&ty=c&ta=0&p=w&s=l", link: "https://finviz.com/quote.ashx?t=$sym&ty=c&p=d&b=1"},
+					{title: "SC", path: "http://c.stockcharts.com/c-sc/sc?s=$sym&p=D&b=5&g=0&i=t4170851807c&r=1565646183323", link: "https://finviz.com/quote.ashx?t=$symty=c&p=d&b=1"},
+					{title: "SC2", path: "http://c.stockcharts.com/c-sc/sc?s=$sym&p=D&b=5&g=0&i=p38909188862&r=1565646119587", link: "https://finviz.com/quote.ashx?t=$sym&ty=c&p=d&b=1"}
+
+				],
+			},
+
 		},
 		methods: {
-			stockNext: function(groupIndex) {
-				if (this.groupData[groupIndex].stockIndex < this.groupData[groupIndex].stock.length - 1) {
-					this.groupData[groupIndex].stockIndex++;
+			keymonitor: function(event, groupData) {
+
+				console.log(event.key);
+				switch (event.key) {
+					case "ArrowRight": this.stockNext(groupData); break;
+					case "ArrowLeft": this.stockPrev(groupData); break;
+					case "ArrowUp": this.stockPrevChart(groupData); break;
+					case "ArrowDown": this.stockNextChart(groupData); break;
+					case "Delete": this.stockDelete(groupData); break;
+				}
+			},
+
+			stockPrev: function(groupData) {
+				if (groupData.stockIndex >= 0) {
+					groupData.stockIndex--;
+					this.setAppData();
 					return;
 				}
-				this.groupData[groupIndex].stockIndex = 0;
+				groupData.stockIndex = 0;
+			},
+
+			stockNext: function(groupData) {
+				if (groupData.stockIndex < groupData.stock.length - 1) {
+					groupData.stockIndex++;
+					this.setAppData();
+					return;
+				}
+				this.appData.groupData[groupIndex].stockIndex = 0;
+			},
+
+			stockDelete: function(groupData){
+				groupData.stock.splice(groupData.stockIndex,1);
+				if (groupData.stockIndex > groupData.stock.length - 1){
+					groupData.stockIndex = 0;
+				}
+			},
+
+			stockPrevChart: function(groupData) {
+				if (groupData.chartIndex <= 0){
+					groupData.chartIndex = 0;
+					return;
+				}
+				groupData.chartIndex--;
+			},
+
+			stockNextChart: function(groupData) {
+				if (groupData.chartIndex > this.appData.chartData.length - 1) {
+					groupData.chartIndex = 0;
+					return;
+				}
+				groupData.chartIndex++;
 			},
 
 			stockCurrentChart: function(groupIndex) {
-				var currentGroup = this.groupData[groupIndex];
+				if (!this.appData.groupData[groupIndex].stock.length > 0) return;
+
+				var currentGroup = this.appData.groupData[groupIndex];
 				var currentSym = currentGroup.stock[currentGroup.stockIndex].symbol;
-				console.log(currentGroup, currentSym);
-				return this.chartData[currentGroup.chartIndex].path.replace('$sym', currentSym);
+				return this.appData.chartData[currentGroup.chartIndex].path.replace('$sym', currentSym);
+			},
+
+			stockCurrentChartLink: function(groupIndex) {
+				var currentGroup = this.appData.groupData[groupIndex];
+				var currentSym = currentGroup.stock[currentGroup.stockIndex].symbol;
+				return this.appData.chartData[currentGroup.chartIndex].link.replace('$sym', currentSym);
+			},
+
+			getAppData: function() {
+				if (localStorage.appData) {
+					this.appData = JSON.parse(localStorage.appData);
+				}
+			},
+
+			setAppData: function() {
+				localStorage.appData = JSON.stringify(this.appData);
+			},
+
+			addQuotes: function (groupData) {
+				var stockList = groupData.inputAdd.split(",").map(function(value, index){
+					groupData.stock.push({symbol: value, note: "", star: false, price: 0, entry: 0, stop: 0});
+				});
+				groupData.inputAdd = '';
+				this.setAppData();
+			},
+
+			genPriceRange: function (price) {
+				var step = 1.5;
+				var perSide = 15;
+				var list = [];
+
+				for (var i=0; i<perSide; i++) {
+					var num = perSide - i;
+					var perc = (step * num) * 0.01;
+					var pPrice = Number(price) + (price * perc);
+						list.push(((perc.toFixed(4) * 100).toFixed(2) + ' - ' + num + ' - ' + pPrice.toFixed(2)));
+				}
+
+				list.push('0 - ' + Number(price).toFixed(2) + ' - 0.0%');
+
+				for (var i=0; i<perSide; i++) {
+					var num = perSide - i;
+					var perc = (step * num) * 0.01;
+					var pPrice = Number(price) + (price * perc);
+					list.push(((perc.toFixed(4) * 100).toFixed(2) + ' - ' + num + ' - ' + pPrice.toFixed(2)));
+				}
+
+				return list;
 			}
 		},
 		mounted() {
+			//this.appData = this.defaultData; return;
+			if (localStorage.appData) {
+				this.getAppData();
+			} else {
+				this.appData = this.defaultData;
+			}
 		},
 		watch: {
+			appData: function () {
+				this.setAppData();
+			}
 		}
 	})
 </script>
