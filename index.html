@@ -206,10 +206,10 @@
 
 				list.push('0 - ' + Number(price).toFixed(2) + ' - 0.0%');
 
-				for (var i=0; i<perSide; i++) {
-					var num = perSide - i;
+				for (var i=1; i<perSide; i++) {
+					var num = i;
 					var perc = (step * num) * 0.01;
-					var pPrice = Number(price) + (price * perc);
+					var pPrice = Number(price) - (price * perc);
 					list.push(((perc.toFixed(4) * 100).toFixed(2) + ' - ' + num + ' - ' + pPrice.toFixed(2)));
 				}
 
