@@ -29,8 +29,11 @@
 			<span style="float: left"><a href="#" v-on:click="newGroup()">New Group</a></span>
 			<span style="float: right">Reset: <a href="#" v-on:click="appData.chartData = defaultData.chartData">chart</a> | <a href="#" v-on:click="appData = defaultData">app</a></span>
 		</div>
-		<div v-for="(item, index) in appData.groupData" class="group-content" v-on:keyup="keymonitor($event, item)">
+		<div v-for="(item, index) in appData.groupData" class="group-content" v-on:keyup.enter="item.stock[item.stockIndex].star =! item.stock[item.stockIndex].star" v-on:keyup="keymonitor($event, item)">
 			<span style="float: right">
+				<span v-on:click="item.stock[item.stockIndex].star =! item.stock[item.stockIndex].star"
+				      v-bind:style="{ color: (item.stock[item.stockIndex].star ? 'red' : 'gray') }">* Star *</span>
+
 				<select @change="groupAction($event, item, index)">
 					<option value=" ">---</option>
 					<option v-for="(importItem, importIndex) in appData.importData" v-bind:value="importIndex">{{importItem.title}}</option>
@@ -55,7 +58,7 @@
 			<div v-if="item.stock.length > 0" class="prices">
 					Price: <input type="text" v-model="item.stock[item.stockIndex].price">
 					Entry: <input type="text" v-model="item.stock[item.stockIndex].entry">
-					Stop: <input type="text" v-model="item.stock[item.stockIndex].entry">
+					Stop: <input type="text" v-model="item.stock[item.stockIndex].stop">
 					<select name="" id="">
 						<option v-for="(item, index) in genPriceRange(item.stock[item.stockIndex].price)">{{item}}</option>
 					</select>
