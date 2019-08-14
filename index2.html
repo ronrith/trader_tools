@@ -14,7 +14,6 @@
 	}
 	.group-content {
 		margin: 0px auto 0px;
-		display: inline-block;
 		width: 100%;
 		max-width: 650px;
 		border: 1px solid #f2f2f2;
@@ -31,14 +30,22 @@
 			<span style="float: right">Reset: <a href="#" v-on:click="appData.chartData = defaultData.chartData">chart</a> | <a href="#" v-on:click="appData = defaultData">app</a></span>
 		</div>
 		<div v-for="(item, index) in appData.groupData" class="group-content" v-on:keyup="keymonitor($event, item)">
-			Add quotes: <input type="" name="" v-model="item.inputAdd"><button v-on:click="addQuotes(item)">Add</button>
 			<span style="float: right">
-				<button v-on:click="appData.groupData.splice(index,1)">X</button>
+				<select @change="groupAction($event, item, index)">
+					<option value=" ">---</option>
+					<option v-for="(importItem, importIndex) in appData.importData" v-bind:value="importIndex">{{importItem.title}}</option>
+					<option value="is">Import Stars</option>
+					<option value=" ">---</option>
+					<option value="dg">Delete Group</option>
+				</select>
+				<button v-on:click="stockDelete(item)">X</button>
 			</span>
 
 			<div v-if="item.stock.length > 0">
-				<span style="float: left"><button v-for="(chartItem, chartItemIndex2) in appData.chartData" v-on:click="item.chartIndex=chartItemIndex2">{{chartItem.title}}</button></span>
-				<span style="float: right"><button v-on:click="stockDelete(item)">Delete Stock</button></span>
+				<span style="float: left">
+					<button v-for="(chartItem, chartItemIndex2) in appData.chartData" v-on:click="item.chartIndex=chartItemIndex2">{{chartItem.title}}</button>
+					<input type="" name="" v-model="item.inputAdd"><button v-on:click="addQuotes(item)">Add</button>
+				</span>
 				<a :href="stockCurrentChartLink(item)" target="_blank"><img :src="stockCurrentChart(item)" alt="" width="100%"></a>
 			</div>
 			<span style="float: left"><button v-on:click="stockPrev(item)">< Prev</button></span>
@@ -56,8 +63,12 @@
 		</div>
 	</div>
 </div>
+<div></div>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 <script>
+
 	var app = new Vue({
 		el: '#app',
 		data: {
@@ -68,14 +79,17 @@
 					{
 						title: "",
 						stock: [
-							{symbol: "spy", note: "", star: false, price: 0, entry: 0, stop: 0},
-							{symbol: "psj", note: "", star: false, price: 0, entry: 0, stop: 0},
-							{symbol: "tna", note: "", star: false, price: 0, entry: 0, stop: 0},
+							{symbol: "spy", note: "", star: false, price: 0, entry: 0, stop: 0, change: 0, high: 0, low: 0, volume: 0},
 						],
 						stockIndex: 0,
 						chartIndex: 0,
 						inputAdd: '',
 					}
+				],
+
+				importData: [
+					{title: "AMA.200.50", minprice: 10, maxprice: 50, path: "http://69.60.111.49/stock.php?maxpage=10&url=https://www.stockmonitor.com/stock-screener/price-above-ma200/?order=volume-desc&page=spage"},
+					{title: "AMA.200.50+", minprice: 50, maxprice: 1000, path: "http://69.60.111.49/stock.php?maxpage=10&url=https://www.stockmonitor.com/stock-screener/price-above-ma200/?order=volume-desc&page=spage"},
 				],
 
 				chartData: [
@@ -84,14 +98,13 @@
 					{title: "W", path: "https://finviz.com/chart.ashx?t=$sym&ty=c&ta=0&p=w&s=l", link: "https://finviz.com/quote.ashx?t=$sym&ty=c&p=d&b=1"},
 					{title: "SD", path: "https://c.stockcharts.com/c-sc/sc?s=$sym&p=D&b=5&g=0&i=t2511577949c&r=1565724541108", link: "https://stockcharts.com/h-sc/ui?s=$spy&p=D&b=5&g=0&id=p96056893041"},
 					{title: "SW", path: "https://c.stockcharts.com/c-sc/sc?s=$sym&p=W&b=5&g=0&i=t9677531400c&r=1565724650031", link: "https://stockcharts.com/h-sc/ui?s=SPY&p=W&b=5&g=0&id=p39695989015"}
-
 				],
 			},
 
 		},
+
 		methods: {
 			keymonitor: function(event, groupData) {
-
 				console.log(event.key);
 				switch (event.key) {
 					case "ArrowRight": this.stockNext(groupData); break;
@@ -101,7 +114,6 @@
 					case "Delete": this.stockDelete(groupData); break;
 				}
 			},
-
 			stockPrev: function(groupData) {
 				if (groupData.stockIndex >= 0) {
 					groupData.stockIndex--;
@@ -167,7 +179,7 @@
 
 			addQuotes: function (groupData) {
 				var stockList = groupData.inputAdd.split(",").map(function(value, index){
-					groupData.stock.push({symbol: value, note: "", star: false, price: 0, entry: 0, stop: 0});
+					groupData.stock.push({symbol: value, note: "", star: false, price: 0, entry: 0, stop: 0, change: 0, high: 0, low: 0, volume: 0},);
 				});
 				groupData.inputAdd = '';
 				this.setAppData();
@@ -207,7 +219,40 @@
 					chartIndex: 0,
 					inputAdd: '',
 				});
+			},
+
+			importData: function (groupData, importIndex) {
+				var appData = this.appData;
+				var importItem = appData.importData[importIndex];
+
+				axios.get(this.appData.importData[importIndex].path)
+					.then(response => {
+						var item;
+						for (var i=0; i<response.data.length; i++){
+							item = response.data[i];
+							if (!(parseInt(item.price) > importItem.minprice && parseInt(item.price) < importItem.maxprice)) continue;
+							groupData.stock.push({symbol: item.symbol, note: "", star: false, price: item.price, entry: 0, stop: 0, change: item.change, high: item.high, low: item.low, volume: item.volume},);
+						}
+					})
+
+			},
+
+			groupAction: function (event, groupItem, groupIndex) {
+				var actionValue = event.target.value;
+				event.target.selectedIndex = 0;
+
+				switch (actionValue) {
+					case 'dg':
+						this.appData.groupData.splice(groupIndex, 1);
+						break;
+					case 'is':
+						console.log('star');
+						break;
+				}
+
+				this.importData(groupItem, actionValue);
 			}
+
 		},
 		mounted() {
 			if (localStorage.appData) {
