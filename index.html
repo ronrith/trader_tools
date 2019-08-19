@@ -15,32 +15,37 @@
 	.group-content {
 		margin: 0px auto 0px;
 		width: 100%;
-		max-width: 650px;
+		max-width: 800px;
 		border: 1px solid #f2f2f2;
 		border-radius: 6px;
 	}
 	.prices input {
 		width: 45px;
 	}
+	.top-menu {
+		text-align: center;
+		margin-bottom: 10px;
+	}
 </style>
 <div id="app" class="app">
-	<div>
-		<span style="float: left"><a href="#" v-on:click="newGroup()">New Group</a></span>
-		<span style="float: right">Reset: <a href="#" v-on:click="appData.chartData = defaultData.chartData">chart</a> | <a href="#" v-on:click="appData = defaultData">app</a></span>
+	<div class="top-menu">
+		<a href="#" v-on:click="newGroup()">New Group</a> |
+		Reset: <a href="#" v-on:click="appData.chartData = defaultData.chartData">chart</a> | <a href="#" v-on:click="appData = defaultData">app</a>
 	</div>
 	<div class="content">
 
 		<div v-for="(item, index) in appData.groupData" class="group-content" v-on:keyup.enter="item.stock[item.stockIndex].star =! item.stock[item.stockIndex].star" v-on:keyup="keymonitor($event, item)">
 			<span style="float: right">
-				<span v-on:click="item.stock[item.stockIndex].star =! item.stock[item.stockIndex].star"
-				      v-bind:style="{ color: (item.stock[item.stockIndex].star ? 'red' : 'gray') }">* Star *</span>
+
 
 				<select @change="groupAction($event, item, index)">
 					<option value=" ">---</option>
-					<option v-for="(importItem, importIndex) in appData.importData" v-bind:value="importIndex">{{importItem.title}}</option>
-					<option value="is">Import Stars</option>
-					<option value=" ">---</option>
+					<option value="is">Keep Only Stars</option>
 					<option value="dg">Delete Group</option>
+					<option value="cs">Clear All Stars</option>
+					<option value=" ">---</option>
+					<option v-for="(importItem, importIndex) in appData.importData" v-bind:value="importIndex">{{importItem.title}}</option>
+
 				</select>
 				<button v-on:click="stockDelete(item)">X</button>
 			</span>
@@ -55,7 +60,11 @@
 			<span style="float: left"><button v-on:click="stockPrev(item)">< Prev</button></span>
 			<span style="float: right"><button v-on:click="stockNext(item)">Next ></button></span>
 			<span v-if="item.stock.length > 0"><b style="text-transform: uppercase">{{item.stock[item.stockIndex].symbol}}</b> ({{item.stockIndex + 1}}/{{item.stock.length}})</span>
-			<span>Stars: <input type="text" v-bind:value="getStars(item)"></span>
+			<span> <input type="text" v-bind:value="getStars(item)"></span>
+			<span> <input type="text" v-bind:value="getAllStock(item)" style="color: gray; width: 50px"></span>
+
+			<span v-on:click="item.stock[item.stockIndex].star =! item.stock[item.stockIndex].star"
+			      v-bind:style="{ color: (item.stock[item.stockIndex].star ? 'red' : 'gray') }">* Star *</span>
 			<div v-if="item.stock.length > 0" class="prices">
 				Price: <input type="text" v-model="item.stock[item.stockIndex].price">
 				Entry: <input type="text" v-model="item.stock[item.stockIndex].entry">
@@ -92,9 +101,28 @@
 				],
 
 				importData: [
-					{title: "AMA.200.50", minprice: 10, maxprice: 50, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-above-ma200/?order=volume-desc&page=spage")},
+					{title: "AMA.7.50", minprice: 3, maxprice: 50, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-above-ma7/?order=volume-desc&page=spage")},
+					{title: "AMA.13.50", minprice: 3, maxprice: 50, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-above-ma13/?order=volume-desc&page=spage")},
+					{title: "AMA.26.50", minprice: 3, maxprice: 50, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-above-ma26/?order=volume-desc&page=spage")},
+					{title: "AMA.50.50", minprice: 3, maxprice: 50, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-above-ma50/?order=volume-desc&page=spage")},
+					{title: "AMA.200.50", minprice: 3, maxprice: 50, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-above-ma200/?order=volume-desc&page=spage")},
+
+					{title: "AMA.7.50+", minprice: 50, maxprice: 1000, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-above-ma7/?order=volume-desc&page=spage")},
+					{title: "AMA.13.50+", minprice: 50, maxprice: 1000, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-above-ma13/?order=volume-desc&page=spage")},
+					{title: "AMA.26.50+", minprice: 50, maxprice: 1000, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-above-ma26/?order=volume-desc&page=spage")},
+					{title: "AMA.50.50+", minprice: 50, maxprice: 1000, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-above-ma50/?order=volume-desc&page=spage")},
 					{title: "AMA.200.50+", minprice: 50, maxprice: 1000, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-above-ma200/?order=volume-desc&page=spage")},
-					{title: "BMA.200.50", minprice: 10, maxprice: 50, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-below-ma200/?order=volume-desc&page=spage")},
+
+					{title: "BMA.7.50", minprice: 3, maxprice: 50, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-below-ma7/?order=volume-desc&page=spage")},
+					{title: "BMA.13.50", minprice: 3, maxprice: 50, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-below-ma13/?order=volume-desc&page=spage")},
+					{title: "BMA.26.50", minprice: 3, maxprice: 50, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-below-ma26/?order=volume-desc&page=spage")},
+					{title: "BMA.50.50", minprice: 3, maxprice: 50, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-below-ma50/?order=volume-desc&page=spage")},
+					{title: "BMA.200.50", minprice: 3, maxprice: 50, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-below-ma200/?order=volume-desc&page=spage")},
+
+					{title: "BMA.7.50+", minprice: 50, maxprice: 1000, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-below-ma7/?order=volume-desc&page=spage")},
+					{title: "BMA.13.50+", minprice: 50, maxprice: 1000, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-below-ma13/?order=volume-desc&page=spage")},
+					{title: "BMA.26.50+", minprice: 50, maxprice: 1000, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-below-ma26/?order=volume-desc&page=spage")},
+					{title: "BMA.50.50+", minprice: 50, maxprice: 1000, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-below-ma50/?order=volume-desc&page=spage")},
 					{title: "BMA.200.50+", minprice: 50, maxprice: 1000, path: "http://69.60.111.49/stock.php?maxpage=7&url=" + encodeURIComponent("https://www.stockmonitor.com/stock-screener/price-below-ma200/?order=volume-desc&page=spage")},
 
 				],
@@ -186,7 +214,7 @@
 
 			addQuotes: function (groupData) {
 				var stockList = groupData.inputAdd.split(",").map(function(value, index){
-					groupData.stock.push({symbol: value, note: "", star: false, price: 0, entry: 0, stop: 0, change: 0, high: 0, low: 0, volume: 0},);
+					groupData.stock.push({symbol: value.trim(), note: "", star: false, price: 0, entry: 0, stop: 0, change: 0, high: 0, low: 0, volume: 0},);
 				});
 				groupData.inputAdd = '';
 				this.setAppData();
@@ -239,7 +267,7 @@
 							item = response.data[i];
 							if (!(parseInt(item.price) > importItem.minprice && parseInt(item.price) < importItem.maxprice)) continue;
 							console.log(item.symbol);
-							groupData.stock.push({symbol: item.symbol, note: "", star: false, price: item.price, entry: 0, stop: 0, change: item.change, high: item.high, low: item.low, volume: item.volume},);
+							groupData.stock.push({symbol: item.symbol.trim(), note: "", star: false, price: item.price, entry: 0, stop: 0, change: item.change, high: item.high, low: item.low, volume: item.volume},);
 						}
 					})
 
@@ -248,14 +276,29 @@
 			groupAction: function (event, groupItem, groupIndex) {
 				var actionValue = event.target.value;
 				event.target.selectedIndex = 0;
-
 				switch (actionValue) {
 					case 'dg':
 						this.appData.groupData.splice(groupIndex, 1);
-						break;
+						return;
 					case 'is':
-						console.log('star');
-						break;
+						var stockList = this.appData.groupData[groupIndex].stock;
+						for (var i=0; i<stockList.length; i++){
+							if (!stockList[i].star){
+								console.log(stockList[i]);
+								stockList.splice(i, 1);
+								i--;
+							}
+						}
+						groupItem.stockIndex = 0;
+						return;
+					case 'cs':
+						var stockList = this.appData.groupData[groupIndex].stock;
+						for (var i=0; i<stockList.length; i++){
+							stockList[i].star = false;
+
+						}
+						groupItem.stockIndex = 0;
+						return;
 				}
 
 				this.importData(groupItem, actionValue);
@@ -265,8 +308,16 @@
 				var symbols = '';
 				groupData.stock.map(function(stock){
 					if (stock.star){
-						symbols = symbols + stock.symbol + ', ';
+						symbols = symbols + stock.symbol.trim() + ', ';
 					}
+				});
+				return symbols;
+			},
+
+			getAllStock : function (groupData) {
+				var symbols = '';
+				groupData.stock.map(function(stock){
+					symbols = symbols + stock.symbol.trim() + ', ';
 				});
 				return symbols;
 			}
