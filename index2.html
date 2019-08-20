@@ -30,6 +30,10 @@
 	</div>
 	<div class="content">
 
+		<div v-if="">
+
+		</div>
+
 		<div v-for="(item, index) in appData.groupData" class="group-content" v-on:keyup.enter="item.stock[item.stockIndex].star =! item.stock[item.stockIndex].star" v-on:keyup="keymonitor($event, item)">
 			<span style="float: right">
 				<span v-on:click="item.stock[item.stockIndex].star =! item.stock[item.stockIndex].star"
