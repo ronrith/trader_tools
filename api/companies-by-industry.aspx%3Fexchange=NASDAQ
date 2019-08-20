@@ -1,0 +1,3017 @@
+
+<!doctype html>
+<html lang="en-us" class="inner no-js" xmlns:og="https://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K2BQVP7');</script>
+<!-- End Google Tag Manager -->
+<script>
+(function(){
+    var is_chrome;
+    if(typeof navigator.vendor!="undefined")
+	    is_chrome = ((navigator.userAgent.toLowerCase().indexOf('chrome') > -1) && (navigator.vendor.toLowerCase().indexOf("google") > -1));
+    else
+	    is_chrome = false;
+})();
+</script>
+<!-- includes\3-column-left-160.master -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+<meta name="viewport" content="width=device-width" />
+
+
+<!-- START page level head content -->
+<title>NASDAQ Companies - NASDAQ.com</title>
+<meta name="keywords" content="NASDAQ&#32;Companies, list of NASDAQ&#32;Companies" />
+<meta name="description" content="Find NASDAQ&#32;Companies and a complete list of NASDAQ, NYSE, and AMEX listed companies using the Company List tool at NASDAQ.com" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.nasdaq.com/screening/companies-by-industry.aspx?exchange=NASDAQ" /> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<!-- opengraph support-->
+<meta property="og:title" content="NASDAQ&#32;Companies" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="NASDAQ.com" />
+<meta property="og:url" content="https://www.nasdaq.com/screening/companies-by-industry.aspx?exchange=NASDAQ" />
+<meta property="og:image" content="/images/Q-logo.jpg" />
+<!-- END page level head content -->
+
+
+<!-- START page level style/script -->
+<script type="text/javascript">
+    myPage = 'nasdaq';
+    sectionId = 'liHome';//section tab
+    breadCrumbId = 'LiNS';//page
+    is_dartSite = "listedcos";
+    is_dartZone = "listedcos-industry";
+    propVar = "Listed Companies";
+    propVar15 = "Home and our company";
+    googlechannel = 'Listedcos';
+    googlehints = 'company research, annual reports, company profiles';
+/*
+SRA ad definitions, this should always correspond with the ad calls on the page
+if an ad is removed from the page, it should be removed from here as well
+*/
+
+var useSRA = true;
+var premakeAds = [];
+premakeAds.push({ 'label': 'ad', 'size': '160x600,300x250,300x600', 'site': is_dartSite, 'zone': is_dartZone });//rightrail
+</script>
+<style type="text/css">
+div#left-ad-rail {
+    padding-right: 15px
+}
+.line-height {
+    line-height: 22px
+}
+div#panel_left a.current {
+    color: #ff9900;
+    font-weight: bold
+}
+ul.pager {
+    line-height: 30px
+}
+.left-nav_one-hundred-sixty-wide-right-rail #main-content-div {
+    width: 620px
+}
+#CompanylistResults th:nth-child(3) {
+    min-width: 65px
+}
+#left-navigation-div {
+    width: 105px !important;
+}
+#main-content-div {
+    width: 533px !important;
+}
+</style>
+<!-- END page level style/script -->
+
+
+<!--********************************* BEGIN includes/global-references.inc **************************-->
+<!-- global stylesheets -->
+<link rel="stylesheet" type="text/css" href="https://www.nasdaq.com/includes/global.min-04172019v1.css"/>
+<!--[if lt IE 9]>
+<script src="https://www.nasdaq.com/includes/html5shiv-printshiv.js"></script>
+<link rel="stylesheet" type="text/css" href="https://www.nasdaq.com/includes/global-ie8.min-11212015v1.css"/>
+<![endif]-->
+
+<!-- favicon and shortcut icons -->
+<link rel="apple-touch-icon" href="https://www.nasdaq.com/images/Q_apple.png"/>
+<link rel="shortcut icon" href="https://www.nasdaq.com/images/qfav.ico" type="image/ico"/>
+<link rel="icon" href="https://www.nasdaq.com/images/qfav.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="https://www.nasdaq.com/images/qfav.ico" type="image/x-icon"/>
+
+  <!-- scripts -->
+
+  <!-- Casale -->
+  <script src="https://js-sec.indexww.com/ht/headertag-nasdaq.js" async></script>
+
+    <!-- GPT -->
+    <script async="true" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
+    <script src="https://www.nasdaq.com/dynamic_includes/marketstatus.js"></script>
+    <script src="https://www.nasdaq.com/aspx/marketstatus.aspx"></script>
+
+    <script src="https://www.nasdaq.com/includes/jquery.min.js"></script>
+    <script src="https://www.nasdaq.com/includes/global.min-08132019v1.js?1"></script>
+    <script src="https://www.nasdaq.com/includes/cookie_policy.js?05232018v1"></script>
+
+	<!-- NASDAQ nasdaq.com DurationMedia -->
+	<script type='text/javascript' src='https://pr.realvu.net/flip/2/c=E420_f=site_si=952'></script>
+    
+    <!-- the dynamic css container -->
+    <style type="text/css" title="dynamic"></style>
+    <script type="text/javascript">
+      //<![CDATA[
+updateSiteTheme();
+//]]>
+      //var btfRefresh = [];
+
+      //function adBtfRefresh(premakeAds) {
+      //  if ((premakeAds.label == "ad") && (premakeAds.site == "btf")) {
+      //    btfRefresh.push(premakeads);
+      //  }
+      //}
+
+      //googletag.cmd.push(function () {
+      //autoAdRefresh(btfRefresh, 60000);
+      //});
+
+      googletag.cmd.push(function () {
+	  autoAdRefresh([0,1,2,3,4], 35000);
+	  });
+    </script>
+   <!-- <script type='text/javascript' src='//rndntpmgnj-a.akamaihd.net/NA2L50A6M.js' async=''></script>-->
+
+    <!--  Quantcast Tag -->
+    <script>
+
+      var ezt = ezt ||[];
+
+      (function(){
+      var elem = document.createElement('script');
+      elem.src = (document.location.protocol == "https:" ? "https://secure" : "https://pixel") + ".quantserve.com/aquant.js?a=p-kGNZ2CXTUFYyw";
+      elem.async = true;
+      elem.type = "text/javascript";
+      var scpt = document.getElementsByTagName('script')[0];
+      scpt.parentNode.insertBefore(elem,scpt);
+      }());
+
+
+      (function(){
+      var label;
+      if(typeof propVar3=='undefined')
+      propVar3 = "";
+      if(typeof propVar15=='undefined')
+      propVar15 = "";
+      if(typeof propVar=='undefined')
+      propVar = "";
+      label = 'Author.'+propVar3+',Category.'+propVar15+'.'+propVar;
+      ezt.push({qacct: 'p-kGNZ2CXTUFYyw',
+      uid: '',
+      labels:label
+      });
+      }());
+
+    </script>
+    <noscript>
+      <img src="//pixel.quantserve.com/pixel/p-kGNZ2CXTUFYyw.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+    <!-- End Quantcast Tag -->
+
+<!--********************************* END includes/global-references.inc **************************-->
+
+<!-- ************* begin includes/infolinks-ad.inc ********************** -->
+
+
+<!-- ************* end includes/infolinks-ad.inc ********************** -->
+
+
+
+
+<script type="text/javascript">
+    var server_time = new Date(1566227410547);
+</script>
+<style type="text/css">
+#container.wrap {background-color:#ffffff}
+</style>
+</head>
+<body id="body">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2BQVP7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!--[if IE 8]> <script src="/includes/respond.js"></script> <![endif]-->
+<!--[if IE 7]> <script src="/includes/zindex.js"></script> <![endif]-->
+
+	
+
+	<!--*************************************** BEGIN includes/global-masthead.inc ****************************************-->
+<!-- comscore tag -->
+
+<!-- Begin comScore Tag -->
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "25698457" });
+  (function() {
+  var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+  s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+  el.parentNode.insertBefore(s, el);
+  })();
+</script>
+<noscript>
+  <img src="https://sb.scorecardresearch.com/p?c1=2&c2=25698457&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+<!-- end comscore tag -->
+<header id="global_header" data-role="header">
+  <!--// Begin Hot Topics -->
+  <div id="hot_topics">
+    <div><b>Hot Topics:</b></div>
+    <a href="/etfs" onclick="triggerAsyncOmnitureClickEvent('nav:hot-topics:ETFs')">ETFs</a>
+    <span>&nbsp;|&nbsp;</span>
+    <a href="https://stocktracker.nasdaq.com/smart-portfolio/welcome" onclick="triggerAsyncOmnitureClickEvent('nav:hot-topics:SmartPT')">Smart Portfolio</a>
+    <span>&nbsp;|&nbsp;</span>
+    <a href="/forex/" onclick="triggerAsyncOmnitureClickEvent('nav:hot-topics:Currencies')">Currencies</a>
+    <span>&nbsp;|&nbsp;</span>
+    <a href="/investing/online-brokers/" onclick="triggerAsyncOmnitureClickEvent('nav:hot-topics:Broker')">Online Broker Center</a>
+  </div>
+  <!--// End Hot Topics -->
+  <nav id="global_nav">
+    <div id="header_wrap">
+      <div class="logo">
+        <a href="/" target="_self" onclick="triggerAsyncOmnitureClickEvent('nav:links:homepage')">
+          <span></span>
+        </a>
+      </div>
+      <div id="nasdaq_login">
+        <div id="nWelcome">
+          &nbsp;
+        </div>
+        <div id="mainNav-88x31">
+          <script type="text/javascript" language="javascript">makeAd('','88x31','masthead',is_dartZone,'','');</script>
+        </div>
+        <!--// Begin notifier placeholder -->
+        <div id="global_notifier" class="floatR">
+          <div class='ideaMelt' melt-notifier=''></div>
+        </div>
+        <!--// End notifier placeholder -->
+      </div>
+    </div>
+    <div class="clearB"></div>
+    <ul class="js-nav-toggle primary" id="js-nav-toggle">
+      <li id="site-nav-company">
+        <a href="https://business.nasdaq.com" data-click-event="nav:company:company-hub" onclick="triggerAsyncOmnitureClickEvent('nav:company:company-hub')">
+          <span>Our Businesses</span>
+        </a>
+        <div class="global_dropdown">
+          <div>
+            <div class="floatL half">
+              <ul>
+                <li>
+                  <a href="https://business.nasdaq.com/tech" onclick="triggerAsyncOmnitureClickEvent('nav:company:tech')"><b>Tech</b></a>
+                  <a href="https://business.nasdaq.com/tech" onclick="triggerAsyncOmnitureClickEvent('nav:company:tech')">Differentiate With <br />Technology</a>
+                </li>
+                <li>
+                  <a href="https://business.nasdaq.com/trade" onclick="triggerAsyncOmnitureClickEvent('nav:company:trade')"><b>Trade</b></a>
+                  <a href="https://business.nasdaq.com/trade" onclick="triggerAsyncOmnitureClickEvent('nav:company:trade')">Trade Multiple <br />Asset Classes</a>
+                </li>
+                <li>
+                  <a href="https://business.nasdaq.com/track" onclick="triggerAsyncOmnitureClickEvent('nav:company:track')"><b>Track</b></a>
+                  <a href="https://business.nasdaq.com/track" onclick="triggerAsyncOmnitureClickEvent('nav:company:track')">Track the Markets</a>
+                </li>
+              </ul>
+            </div>
+            <div class="displayIB half">
+              <ul>
+                <li>
+                  <a href="https://business.nasdaq.com/intel" onclick="triggerAsyncOmnitureClickEvent('nav:company:intel')"><b>Intel</b></a>
+                  <a href="https://business.nasdaq.com/intel" onclick="triggerAsyncOmnitureClickEvent('nav:company:intel')">Leverage Actionable <br />Intelligence</a>
+                </li>
+                <li>
+                  <a href="https://business.nasdaq.com/list" onclick="triggerAsyncOmnitureClickEvent('nav:company:list')"><b>List</b></a>
+                  <a href="https://business.nasdaq.com/list" onclick="triggerAsyncOmnitureClickEvent('nav:company:list')">Access Capital</a>
+                  <a href="https://listingcenter.nasdaq.com/" onclick="triggerAsyncOmnitureClickEvent('nav:company:list')">Listing Center</a>
+                </li>
+                <li>
+                  <a href="https://business.nasdaq.com/discover" onclick="triggerAsyncOmnitureClickEvent('nav:company:discover')"><b>Discover</b></a>
+                  <a href="https://business.nasdaq.com/discover" onclick="triggerAsyncOmnitureClickEvent('nav:company:discover')">Discover Nasdaq</a>
+                  <a href="https://business.nasdaq.com/marketinsite" onclick="triggerAsyncOmnitureClickEvent('nav:company:discover')">Nasdaq Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--// Begin includes/main-nav-company-featured.inc -->
+<div class="table-table featured">
+  <div class="table-row">
+    <div class="table-cell">
+      <a href="https://nasdaq.com/rewritetomorrow" onclick="triggerAsyncOmnitureClickEvent('nav:company:rewritetomorrow')">
+        <img src="/images/rewritetomorrow80x80-10082018v4.jpg" width="80" height="80" alt="Rewrite Tomorrow featured image" />
+      </a>
+    </div>
+    <div class="table-cell">
+      <a href="https://nasdaq.com/rewritetomorrow" onclick="triggerAsyncOmnitureClickEvent('nav:company:rewritetomorrow')">
+        <b>Rewrite Tomorrow</b>
+      </a>
+      <div class="clearB"></div>
+      <span>Tomorrow is a market of endless possibilities, learn more</span>
+    </div>
+  </div>
+</div>
+<!--// End includes/main-nav-company-featured.inc -->
+        </div>
+      </li>
+      <li id="site-nav-quotes">
+        <a href="/quotes" data-click-event="nav:quotes:quotes-hub" onclick="triggerAsyncOmnitureClickEvent('nav:quotes:quotes-hub')">
+          <span>Quotes</span>
+        </a>
+        <div class="global_dropdown">
+          <div>
+            <div class="floatL half">
+              <ul>
+                <li>
+                  <a href="/quotes/" onclick="triggerAsyncOmnitureClickEvent('nav:quotes:quotes-hub')">
+                    <b>Quotes &amp; Research</b>
+                  </a>
+                  <a href="/aspx/flashquotes.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:quotes:flash-quotes')">Flash Quotes</a>
+                  <a href="/aspx/infoquotes.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:quotes:info-quotes')">InfoQuotes</a>
+                  <a href="/quotes/stock-quotes.aspx" onclick="handleNQClick(this,'nav:quotes:summary-quotes')">Summary Quotes</a>
+                  <a href="/quotes/real-time.aspx" onclick="handleNQClick(this,'nav:quotes:real-time')">Real-time Quotes</a>
+                  <a href="/extended-trading/" onclick="handleNQClick(this,'nav:quotes:extended-trading')">Extended Trading</a>
+                  <a href="/options/" onclick="handleNQClick(this,'nav:quotes:options')">Options Trading Center</a>
+                  <a href="/quotes/historical-quotes.aspx" onclick="handleNQClick(this,'nav:quotes:historical-quotes')">Historical Quotes</a>
+                </li>
+                <li>
+                  <span class="fontS14px"><b>Charts</b></span>
+                  <a href="/quotes/stock-charts.aspx" onclick="handleNQClick(this,'nav:quotes:basic-charts')">Basic Charts</a>
+                  <a href="/quotes/interactive-charts.aspx" onclick="handleNQClick(this,'nav:quotes:interactive-charts')">Interactive Charts</a>
+                </li>
+                <li>
+                  <span class="fontS14px"><b>Companies</b></span>
+                  <a href="/quotes/company-news.aspx" onclick="handleNQClick(this,'nav:quotes:news')">Company News</a>
+                  <a href="/quotes/press-releases.aspx" onclick="handleNQClick(this,'nav:quotes:press-releases')">Press Releases</a>
+                  <a href="/screening/company-list.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:quotes:company-list')">Company List</a>
+                  <a href="/screening/companies-by-industry.aspx?exchange=NASDAQ" onclick="handleNQClick(this,'nav:quotes:nasdaq')">Nasdaq Companies</a>
+                </li>
+              </ul>
+            </div>
+            <div class="floatR half">
+              <ul>
+                <li>
+                  <span class="fontS14px"><b>Stock Analysis</b></span>
+                  <a href="/quotes/analyst-research.aspx" onclick="handleNQClick(this,'nav:quotes:analyst-research')">Analyst Research</a>
+                  <a href="/quotes/stock-guru-analysis.aspx" onclick="handleNQClick(this,'nav:quotes:guru-analysis')">Guru Analysis</a>
+                  <a href="/quotes/stock-reports.aspx" onclick="handleNQClick(this,'nav:quotes:stock-reports')">Stock Reports</a>
+                  <a href="/quotes/business-competitors.aspx" onclick="handleNQClick(this,'nav:quotes:competitors')">Competitors</a>
+                </li>
+                <li>
+                  <span class="fontS14px"><b>Fundamentals</b></span>
+                  <a href="/quotes/company-financials.aspx" onclick="handleNQClick(this,'nav:quotes:financials')">Financials</a>
+                  <a href="/quotes/revenue-eps.aspx" onclick="handleNQClick(this,'nav:quotes:revenue-eps')">Revenue/EPS</a>
+                  <a href="/quotes/sec-filings.aspx" onclick="handleNQClick(this,'nav:quotes:sec-filings')">SEC Filings</a>
+                  <a href="/quotes/short-interest.aspx" onclick="handleNQClick(this,'nav:quotes:short-interest')">Short Interest</a>
+                  <a href="/quotes/dividend-history.aspx" onclick="handleNQClick(this,'nav:quotes:dividend-history')">Dividend History</a>
+                </li>
+                <li>
+                  <span class="fontS14px"><b>Holdings</b></span>
+                  <a href="/quotes/ownership.aspx" onclick="handleNQClick(this,'nav:quotes:ownership')">Ownership Summary</a>
+                  <a href="/quotes/institutional-holdings.aspx" onclick="handleNQClick(this,'nav:quotes:institutional-holdings')">Institutional Holdings</a>
+                  <a href="/quotes/insider-trades.aspx" onclick="handleNQClick(this,'nav:quotes:insider-trades')">Insiders Form 4</a>
+                </li>
+              </ul>
+            </div>
+            <div class="clearB"></div>
+          </div>
+        </div>
+      </li>
+      <li id="site-nav-markets">
+        <a href="/markets/" data-click-event="nav:markets:markets-hub" onclick="triggerAsyncOmnitureClickEvent('nav:markets:markets-hub')">
+          <span>Markets</span>
+        </a>
+        <div class="global_dropdown">
+          <div>
+            <div class="floatL half">
+              <ul>
+                <li>
+                  <a href="/extended-trading/" onclick="triggerAsyncOmnitureClickEvent('nav:markets:extended')">
+                    <b>Extended Hours</b>
+                  </a>
+                  <a href="/extended-trading/premarket-mostactive.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:pre-market')">Pre-Market Activity</a>
+                  <a href="/extended-trading/afterhours-mostactive.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:after-hours')">After Hours Activity</a>
+                </li>
+                <li>
+                  <span class="fontS14px"><b>Stocks</b></span>
+                  <a href="/aspx/mostactive.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:most-active')">Most Active</a>
+                  <a href="/markets/unusual-volume.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:unusual-volume')">Unusual Volume</a>
+                  <a href="/aspx/52-week-high-low.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:52-week-high-low')">52 Week High/Low</a>
+                  <a href="/markets/upcoming-splits.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:upcoming-splits')">Upcoming Splits</a>
+                  <a href="/markets/sec-filings-n.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:sec-filings')">New SEC Filings</a>
+                  <a href="/markets/ipos" onclick="triggerAsyncOmnitureClickEvent('nav:markets:ipo-summary')">IPO Summary</a>
+                  <a href="/earnings/earnings-calendar.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:earnings-calendar')">Earnings Calendar</a>
+                  <a href="/dividend-stocks/" onclick="triggerAsyncOmnitureClickEvent('nav:markets:dividend-stocks')">Dividend Stocks</a>
+                  <a href="/markets/barchart-sectors.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:sector-analysis')">Sector Analysis</a>
+                </li>
+                <li>
+                  <a href="/forex/" onclick="triggerAsyncOmnitureClickEvent('nav:markets:forex')"><b>Forex</b></a>
+                </li>
+              </ul>
+            </div>
+            <div class="floatR half">
+              <ul>
+                <li>
+                  <a href="/markets/commodities.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:commodities')"><b>Commodities</b></a>
+                  <a href="/markets/gold.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:gold')">Gold</a>
+                  <a href="/markets/crude-oil.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:crude-oil')">Oil</a>
+                </li>
+                <li>
+                  <span class="fontS14px"><b>Analyst Activity</b></span>
+                  <a href="/earnings/daily-analyst-recommendations.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:upgrades-downgrades')">Upgrades/Downgrades</a>
+                  <a href="/earnings/analyst-forecast-change.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:analyst-forecast-change')">Forecast Changes</a>
+                  <a href="/earnings/daily-earnings-surprise.aspx" class="a-mega" onclick="triggerAsyncOmnitureClickEvent('nav:markets:daily-earnings-surprise')">Earning Surprises</a>
+                </li>
+                <li>
+                  <a href="/markets/indices/" onclick="triggerAsyncOmnitureClickEvent('nav:markets:indices')"><b>Indices</b></a>
+                  <a href="/markets/indices/major-indices.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:market-indices')">Major Stock Indices</a>
+                  <a href="/markets/indices/sector-indices.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:sector-indices')">Market Sector Indices</a>
+                  <a href="/markets/index-highs" onclick="triggerAsyncOmnitureClickEvent('nav:markets:statistical-milestones')">Statistical Milestones</a>
+                </li>
+                <li>
+                  <a href="/markets/global-markets.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:markets:global-markets')"><b>Global Markets</b></a>
+                </li>
+              </ul>
+            </div>
+            <div class="clearB"></div>
+          </div>
+        </div>
+      </li>
+      <li id="site-nav-news">
+        <a href="/news/" data-click-event="nav:news:news-hub" onclick="triggerAsyncOmnitureClickEvent('nav:news:news-hub')">
+          <span>News</span>
+        </a>
+        <div class="global_dropdown">
+          <div>
+            <div class="floatL half">
+              <ul>
+                <li>
+                  <a href="/quotes/company-news.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:news:company-news')"><b>Company News</b></a>
+                </li>
+                <li>
+                  <a href="/news/market-headlines.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:news:market-headlines')"><b>Market Headlines</b></a>
+                </li>
+                <li>
+                  <a href="/topic/marketinsite" onclick="triggerAsyncOmnitureClickEvent('nav:news:marketinsite')"><b>MarketInsite</b></a>
+                </li>
+              </ul>
+            </div>
+            <div class="floatR half">
+              <ul>
+                <li>
+                  <a href="/markets/us-economic-calendar.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:news:economic-calendar')"><b>Economic Calendar</b></a>
+                </li>
+                <li>
+                  <a href="/tech/" onclick="triggerAsyncOmnitureClickEvent('nav:news:technology')"><b>Technology News</b></a>
+                </li>
+                <li>
+                  <a href="/tomorrowscapital/" onclick="triggerAsyncOmnitureClickEvent('nav:news:tomorrowscapital')"><b>Tomorrow's Capital Podcast</b></a>
+                </li>
+              </ul>
+            </div>
+            <div class="clearB"></div>
+          </div>
+          <!-- Begin includes/main-navigation-featured-video.inc -->
+<div class="table-table featured">
+  <div class="table-row">
+    <div class="table-cell">
+      <a href="/article/three-5g-stocks-poised-to-soar-over-the-next-decade-cm1199920" onclick="triggerAsyncOmnitureClickEvent('nav:news:featured-article')">
+        <img src="/images/news/0819news-am2.jpg" width="80" height="80" />
+      </a>
+    </div>
+    <div class="table-cell">
+      <a href="/article/three-5g-stocks-poised-to-soar-over-the-next-decade-cm1199920" onclick="triggerAsyncOmnitureClickEvent('nav:news:featured-article')">
+      Three 5G Stocks Poised to Soar Over the Next Decade
+      </a>
+      <div class="clearB"></div>
+    </div>
+  </div>
+</div>
+<!-- End includes/main-navigation-featured-video.inc -->
+        </div>
+      </li>
+      <li id="site-nav-investing">
+        <a href="/investing/" data-click-event="nav:investing:investing-hub" onclick="triggerAsyncOmnitureClickEvent('nav:investing:investing-hub')">
+          <span>Investing</span>
+        </a>
+        <div class="global_dropdown">
+          <div>
+            <div class="floatL half">
+              <ul>
+                <li>
+                  <a href="/investing/stocks.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:investing:stocks')">
+                    <b>Stocks</b>
+                  </a>
+                  <a href="/investing/how-to-invest.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:investing:investing-basics')">Investing Basics</a>
+                  <a href="/investing/online-brokers/" onclick="triggerAsyncOmnitureClickEvent('nav:investing:online-brokers')">Broker Comparison</a>
+                  <a href="/investing/glossary/" onclick="triggerAsyncOmnitureClickEvent('nav:investing:glossary')">Glossary</a>
+                </li>
+                <li>
+                  <a href="/investing/mutual-funds.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:investing:mutual-funds')"><b>Mutual Funds</b></a>
+                </li>
+                <li>
+                  <a href="/etfs" onclick="triggerAsyncOmnitureClickEvent('nav:investing:etfs')"><b>ETFs</b></a>
+                </li>
+                <li>
+                  <a href="/options/" onclick="triggerAsyncOmnitureClickEvent('nav:investing:options')"><b>Options</b></a>
+                </li>
+              </ul>
+            </div>
+            <div class="floatR half">
+              <ul>
+                <li>
+                  <a href="/investing/tools.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:investing:tools')"><b>Investing Tools</b></a>
+                  <a href="/reference/stock-screener.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:investing:stock-screener')">Stock Screener</a>
+                  <a href="/investing/guru/guru-stock-screener.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:investing:guru-screener')">Guru Screener</a>
+                </li>
+                <li>
+                  <a href="/advisor/" onclick="triggerAsyncOmnitureClickEvent('nav:investing:advisor')"><b>Financial Advisor <br />Center</b></a>
+                </li>
+                <li>
+                  <a href="/investing/bonds.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:investing:bonds')"><b>Bonds</b></a>
+                </li>
+              </ul>
+            </div>
+            <div class="clearB"></div>
+          </div>
+          <!--// Begin includes/main-nav-investing-feature.inc -->
+
+<div class="table-table featured">
+  <div class="table-row">
+    <div class="table-cell">
+      <a href="/article/how-data-is-making-the-us-stock-market-open-for-all-investors-cm998274" onclick="triggerAsyncOmnitureClickEvent('nav:investing:the-anatomy-of-the-trade')">
+        <img src="/images/anatomy-of-a-trade80x80.jpg" width="80" height="80" border="0" />
+      </a>
+    </div>
+    <div class="table-cell">
+      <a href="/article/how-data-is-making-the-us-stock-market-open-for-all-investors-cm998274" onclick="triggerAsyncOmnitureClickEvent('nav:investing:the-anatomy-of-the-trade')">
+          <b>The Anatomy of a Trade</b>
+      </a>
+      <div class="clearB"></div>
+      <span>How data is making the U.S. stock market more open for all</span>
+    </div>
+  </div>
+</div>
+
+<!--// End includes/main-nav-investing-feature.inc -->
+        </div>
+      </li>
+      <li id="site-nav-pf">
+        <a href="/personal-finance/" data-click-event="nav:personal-finance:pf-hub" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:pf-hub')">
+          <span>Personal Finance</span>
+        </a>
+        <div class="global_dropdown">
+          <div>
+            <div class="floatL half">
+              <ul>
+                <li>
+                  <a href="/personal-finance/retirement.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:retirement')">
+                    <b>Retirement</b>
+                  </a>
+                </li>
+                <li>
+                  <a href="/personal-finance/real-estate.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:real-estate')">
+                    <b>Real Estate</b>
+                  </a>
+                </li>
+                <li>
+                  <a href="/personal-finance/banking.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:banking')">
+                    <b>Banking</b>
+                  </a>
+                </li>
+                <li>
+                  <a href="/personal-finance/insurance.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:insurance')">
+                    <b>Insurance</b>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="floatR half">
+              <ul>
+                <li>
+                  <a href="/personal-finance/saving-money/" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:saving-money')">
+                    <b>Saving Money</b>
+                  </a>
+                </li>
+                <li>
+                  <a href="/personal-finance/taxes.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:taxes')">
+                    <b>Taxes</b>
+                  </a>
+                </li>
+                <li>
+                  <a href="/personal-finance/investments.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:investments')">
+                    <b>Investments</b>
+                  </a>
+                </li>
+                <li>
+                  <a href="/personal-finance/small-business.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:small-business')">
+                    <b>Small Business</b>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="clearB"></div>
+          </div>
+          <!--// Begin includes/main-navigation-featured-article.inc -->
+<div class="table-table featured">
+  <div class="table-row">
+    <div class="table-cell">
+      <a href="/article/3-signs-your-finances-need-an-overhaul-cm1199857" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:featured-article')">
+        <img src="/images/news/0819news-am5.jpg" width="80" height="80" border="0" />
+      </a>
+    </div>
+    <div class="table-cell">
+      <a href="/article/3-signs-your-finances-need-an-overhaul-cm1199857" onclick="triggerAsyncOmnitureClickEvent('nav:personal-finance:featured-article')">
+      3 Signs Your Finances Need an Overhaul
+      </a>
+      <div class="clearB"></div>
+    </div>
+  </div>
+</div>
+<!--// End includes/main-navigation-featured-article.inc -->
+        </div>
+      </li>
+      <li id="site-nav-nasdaq">
+        <a href="https://stocktracker.nasdaq.com/smart-portfolio" data-click-event="nav:my-nasdaq:my-nasdaq-hub" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:my-nasdaq-hub')">
+          <span>Portfolio</span>
+        </a>
+        <div class="global_dropdown">
+          <div>
+            <div class="floatL half">
+              <ul>
+                <li>
+                  <span class="fontS14px"><b>Smart Portfolio</b></span>
+                  <a href="https://stocktracker.nasdaq.com/smart-portfolio/welcome" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:overview')">Overview</a>
+                  <a href="https://stocktracker.nasdaq.com/smart-portfolio/holdings/holdings" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:holdings')">My Holdings</a>
+                  <a href="https://stocktracker.nasdaq.com/smart-portfolio/analysis/overview" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:portfolio-analysis')">My Portfolio Analysis</a>
+                  <a href="https://stocktracker.nasdaq.com/smart-portfolio/insights" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:insights')">Crowd Insights</a>
+                  <a href="https://stocktracker.nasdaq.com/smart-portfolio/performance" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:performance')">My Performance</a>
+                </li>
+              </ul>
+            </div>
+            <div id="communitynav" class="floatR half">
+              <ul>
+                <li>
+                  <p class="margin0px">Join the Nasdaq Community today and get free, instant access to portfolios, stock ratings, real-time alerts, and more!</p>
+                  <div class="clearB margin5px"></div>
+                  <a href="https://community.nasdaq.com/" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:register')">Join Today</a>
+                  <div class="clearB margin5px"></div>
+                </li>
+                <li>
+                  <h4>Already a member?</h4>
+                  <div class="clearB margin5px"></div>
+                  <a href="https://community.nasdaq.com/login.aspx" onclick="triggerAsyncOmnitureClickEvent('nav:my-nasdaq:login')">Login</a>
+                </li>
+              </ul>
+            </div>
+            <div class="clearB"></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div id="global_nav_placeholder"></div>
+  <div class="global_search" id="global_search">
+    <div class="wrapper">
+      <div class="left-ad-unit120">
+        <script type="text/javascript" language="javascript">
+          makeAd('','120x60','bookend_left',is_dartZone,'','');
+        </script>
+        <!--// <script type="text/javascript" language="javascript">
+          makeAd('','120x60','Bookend_Left_In',is_dartZone,'','');
+        </script> -->
+		<div id="amp-10017">
+			<script type="text/javascript">
+				setTimeout(function(){
+					!function(a,e,t,n,c){a[n]=a[n]||{},a[n][c]=a[n][c]||[];var o="script",r=e.createElement(o);r.src=e.location.protocol+t,r.async=1;var m=e.getElementsByTagName(o)[0];m.parentNode.insertBefore(r,m)}(window,document,"//static.ampxchange.com/tiles/v1.1/js/ad-min.js","AMP","tilesTagCmd");
+					AMP.tilesTagCmd.push(function() {
+						AMP.tilesTag.requestAd(
+							{
+								partner: "nasdaq_tiles",
+								sub1: "10017",
+								sub2: "nasdaq.com",
+								v: "1.2",
+								results: "2",
+								width: "160",
+								height: "60",
+								element_id: "amp-10017"
+							}
+						);
+					});
+				}, 4000);
+			</script>
+		</div>
+      </div>
+      <!--//End 120x60 Ad Unit -->
+      <form method="post" action="/" id="stock-search" class="stock-search" onsubmit="return false;">
+        <div id="stock-search-wrap">
+          <label for="stock-search-text">
+            <input type="text" name="stock-search-text" id="stock-search-text" class="ajax-search" placeholder="Enter symbol, name or keyword" />
+            <button type="submit" id="stock-search-submit">
+              <span></span>
+            </button>
+          </label>
+        </div>
+      </form>
+      <script type="text/javascript">
+        if(!isIEBrowser() && !isMobileBrowser() && !isTabletBrowser())
+        {
+        $(function(){
+        $('#stock-search-text').focus();
+        });
+        }
+        Nasdaq_Quotesearch.init();
+      </script>
+      <div class="right-ad-unit120">
+        <script type="text/javascript" language="javascript">
+          makeAd('','120x60','Bookend_Right',is_dartZone,'','');
+        </script>
+        <script type="text/javascript" language="javascript">
+          makeAd('','120x60','Bookend_Right_In',is_dartZone,'','');
+        </script>
+      </div>
+      <!--//End 120x60 Ad Unit -->
+    </div>
+  </div>
+
+  <!--** START ALERT ~/includes/masthead_alert.inc **-->
+
+<!-- 
+  <div id="masthead-alert" style="visibility:hidden;">
+    <h2 style="font-weight:bold;background-color: #0095c5;border: 0;color: #ffffff;font-size: 17px;margin: -15px 0 15px;overflow: hidden;padding: 10px 10px 10px 35px;position: relative;text-transform: uppercase;">
+      <span>Nasdaq Earnings: </span>
+
+      <a href="/article/nasdaq-ndaq-4th-quarter-earnings-what-to-expect-cm1088683" style="color:white;">What to expect from Nasdaq's 4th quarter</a>
+    </h2>
+  </div>
+  -->
+
+<!-- Script for different page sizes and visibility change -->
+<script type="text/javascript">
+  setTimeout(function(){
+    document.getElementById('masthead-alert').style.visibility = "visible";
+  },5000);
+</script>
+
+<!--** END ALERT ~/includes/masthead_alert.inc **-->
+
+  <div id="global_banner" class="wrapper">
+    <script type="text/javascript" language="JavaScript">
+      makeAd('','728x90,970x90,970x250',is_dartSite,is_dartZone,'','');
+    </script>
+  </div>
+  <!--//End global_banner -->
+
+  <script>initNav();</script>
+</header>
+<!--//End global_header-->
+
+<!--*************************************** END includes/global-masthead.inc ******************************************-->
+
+
+<script>
+    cacheLoginStatus(false, null, null, null, "https\x3a\x2f\x2fcommunity.nasdaq.com");
+</script>
+
+
+
+	<div id="container" class="wrap cf">
+		<!--
+        <div class="highlight">
+            <center>
+                <script src="/aspx/indexrowhtml.aspx?indexname=NASDAQDJIASPXWITHOUTIMAGE"></script>
+            </center>
+        </div>
+		-->
+		
+        <div id="content" class="left-nav_one-hundred-sixty-wide-right-rail"><!--change class to change right rail width-->
+	        <div id="left-navigation-div">
+		        
+    
+
+<script>
+
+
+var exchURL="";
+var sectURL="";
+var regURL="";
+var mktcapURL="";
+
+var exch = get_querystring_value("exchange");
+var markt = get_querystring_value("market");
+
+
+var sect = get_querystring_value("industry");
+
+
+var reg = get_querystring_value("region");
+var cntry = get_querystring_value("country");
+var state = get_querystring_value("state");
+
+
+var mktcap = get_querystring_value("marketcap");
+
+
+function updateURL(anchor, paramlabel, paramvalue)
+{
+	//remove "all" parameters from querystring
+	url = document.location.href.replace(/\?\S+=ALL$|&\S+=ALL/g,"").replace(/\?\S+=ALL&/,"?");
+
+	//remove current paramlabel if one exists
+	switch(paramlabel)
+	{
+		case "exchange":
+			if(exch!=false)
+				url = url.replace("exchange="+exch,"");
+			if(markt!=false)
+				url = url.replace("market="+markt,"");
+			url = url.replace(/&{2,}/,"&").replace("?&","?").replace(/&$/,"").replace(/\?$/,"").replace("#","");
+			break;
+
+		case "region":
+			if(reg!=false)
+				url = url.replace("region="+reg,"");
+			if(cntry!=false)
+				url = url.replace("country="+cntry,"");
+			if(state!=false)
+				url = url.replace("state="+state,"");
+			url = url.replace(/&{2,}/,"&").replace("?&","?").replace(/&$/,"").replace(/\?$/,"").replace("#","");
+			break;
+
+		case "industry":
+			if(sect!=false)
+				url = url.replace("industry="+sect,"").replace(/&{2,}/,"&").replace("?&","?").replace(/&$/,"").replace(/\?$/,"").replace("#","");
+			break;
+
+		case "marketcap":
+			if(mktcap!=false)
+				url = url.replace("marketcap="+mktcap,"").replace(/&{2,}/,"&").replace("?&","?").replace(/&$/,"").replace(/\?$/,"").replace("#","");
+			break;
+
+	}
+	url = url+"&"+paramlabel+"="+paramvalue;
+	url = url.replace(".aspx&",".aspx?").replace("?&","?");
+	anchor.href = url;
+}
+
+	
+</script>
+
+
+<div id="panel_left" class="fontS14px line-height">
+    <h2>Filters</h2>
+	<h4>Exchange</h4>
+	<span id="exchangeshowall">
+		<a href="/screening/companies-by-industry.aspx?exchange=NASDAQ" onmouseover="updateURL(this,'exchange','NASDAQ')">NASDAQ</a><br/>
+		<a href="/screening/companies-by-industry.aspx?exchange=NYSE" onmouseover="updateURL(this,'exchange','NYSE')">NYSE</a><br/>
+		<a href="/screening/companies-by-industry.aspx?exchange=AMEX" onmouseover="updateURL(this,'exchange','AMEX')">AMEX</a><br/>
+	</span>
+	<br/>
+
+	<h4>Region</h4>
+	<span id="regionshowall">
+		<a href="/screening/companies-by-region.aspx?region=Africa" onmouseover="updateURL(this,'region','Africa')">Africa</a><br/>
+		<a href="/screening/companies-by-region.aspx?region=Asia" onmouseover="updateURL(this,'region','Asia')">Asia</a><br/>
+		<a href="/screening/companies-by-region.aspx?region=Australia+and+South+Pacific" onmouseover="updateURL(this,'region','Australia+and+South+Pacific')">Australia and South Pacific</a><br/>
+		<a href="/screening/companies-by-region.aspx?region=Caribbean" onmouseover="updateURL(this,'region','Caribbean')">Central America and Caribbean</a><br/>
+		<a href="/screening/companies-by-region.aspx?region=Europe" onmouseover="updateURL(this,'region','Europe')">Europe</a><br/>
+		<a href="/screening/companies-by-region.aspx?region=South+America" onmouseover="updateURL(this,'region','South+America')">South America</a><br/>
+		<a href="/screening/companies-by-region.aspx?region=Middle+East" onmouseover="updateURL(this,'region','Middle+East')">Middle East</a><br/>
+		<a href="/screening/companies-by-region.aspx?region=North+America" onmouseover="updateURL(this,'region','North+America')">North America</a><br/>					
+	</span>
+	<br/>
+
+	<h4>Industry</h4>
+	<span id="industryshowall">
+		<a href="/screening/companies-by-industry.aspx?industry=Basic+Industries" onmouseover="updateURL(this,'industry','Basic+Industries')">Basic Industries</a><br/>
+		<a href="/screening/companies-by-industry.aspx?industry=Capital+Goods" onmouseover="updateURL(this,'industry','Capital+Goods')">Capital Goods</a><br/>
+		<a href="/screening/companies-by-industry.aspx?industry=Consumer+Durables" onmouseover="updateURL(this,'industry','Consumer+Durables')">Consumer Durables</a><br/>
+		<a href="/screening/companies-by-industry.aspx?industry=Consumer+Non-Durables" onmouseover="updateURL(this,'industry','Consumer+Non-Durables')">Consumer Non-Dur.</a><br/>
+		<a href="/screening/companies-by-industry.aspx?industry=Consumer+Services" onmouseover="updateURL(this,'industry','Consumer+Services')">Consumer Services</a><br/>
+		<a href="/screening/companies-by-industry.aspx?industry=Energy" onmouseover="updateURL(this,'industry','Energy')">Energy</a><br/>
+		<a href="/screening/companies-by-industry.aspx?industry=Finance" onmouseover="updateURL(this,'industry','Finance')">Finance</a><br/>
+		<a href="/screening/companies-by-industry.aspx?industry=Health+Care" onmouseover="updateURL(this,'industry','Health+Care')">Healthcare</a><br/>
+		<a href="/screening/companies-by-industry.aspx?industry=Miscellaneous" onmouseover="updateURL(this,'industry','Miscellaneous')">Miscellaneous</a><br/>
+		<a href="/screening/companies-by-industry.aspx?industry=Public+Utilities" onmouseover="updateURL(this,'industry','Public+Utilities')">Public Utilities</a><br/>
+		<a href="/screening/companies-by-industry.aspx?industry=Technology" onmouseover="updateURL(this,'industry','Technology')">Technology</a><br/>
+		<a href="/screening/companies-by-industry.aspx?industry=Transportation" onmouseover="updateURL(this,'industry','Transportation')">Transportation</a><br/>
+	</span>
+	<br/>
+
+	<h4>Market Cap</h4>	
+	<span id="marketcapshowall">
+		<a title="Over $200 billion" href="/screening/companies-by-name.aspx?letter=A&marketcap=Mega-cap" onmouseover="updateURL(this,'marketcap','Mega-cap')" rel="nofollow">Mega-cap</a><br/>
+		<a title="$10 billion�$200 billion" href="/screening/companies-by-name.aspx?letter=A&marketcap=Large-cap" onmouseover="updateURL(this,'marketcap','Large-cap')" rel="nofollow">Large-cap</a><br/>
+		<a title="$2 billion�$10 billion" href="/screening/companies-by-name.aspx?letter=A&marketcap=Mid-cap" onmouseover="updateURL(this,'marketcap','Mid-cap')" rel="nofollow">Mid-cap</a><br/>
+		<a title="$300 million�$2 billion" href="/screening/companies-by-name.aspx?letter=A&marketcap=Small-cap" onmouseover="updateURL(this,'marketcap','Small-cap')" rel="nofollow">Small-cap</a><br/>
+		<a title="$50 million-$300 million" href="/screening/companies-by-name.aspx?letter=A&marketcap=Micro-cap" onmouseover="updateURL(this,'marketcap','Micro-cap')" rel="nofollow">Micro-cap</a><br/>
+		<a title="Below $50 million" href="/screening/companies-by-name.aspx?letter=A&marketcap=Nano-cap" onmouseover="updateURL(this,'marketcap','Nano-cap')" rel="nofollow">Nano-cap</a><br/>
+	</span>
+</div>
+
+<script type="text/javascript">
+var curlist;
+var hl;
+var ref;
+var startIndex;
+var endIndex;
+var result;
+if(exch!=false && exch!= "ALL")
+{
+	curlist = document.getElementById("exchangeshowall").getElementsByTagName('a');
+	for(i=0;i<curlist.length;i++)
+	{
+		hl = curlist[i].attributes.getNamedItem('href');
+		ref = hl.nodeValue;
+		startIndex = ref.indexOf("exchange=")+9;
+		endIndex = ref.indexOf("&",startIndex);
+		if(endIndex!=-1)
+			result = ref.slice(startIndex,endIndex);
+		else
+			result = ref.slice(startIndex);
+		if(result==exch)
+		{
+			curlist[i].className = "current";
+			break;
+		}
+	}
+}
+if(reg!=false && reg!= "ALL")
+{
+	curlist = document.getElementById("regionshowall").getElementsByTagName('a');
+	for(i=0;i<curlist.length;i++)
+	{
+		hl = curlist[i].attributes.getNamedItem('href');
+		ref = hl.nodeValue;
+		startIndex = ref.indexOf("region=")+7;
+		endIndex = ref.indexOf("&",startIndex);
+		if(endIndex!=-1)
+			result = ref.slice(startIndex,endIndex);
+		else
+			result = ref.slice(startIndex);
+		if(result==reg)
+		{
+			curlist[i].className = "current";
+			break;
+		}
+	}
+}
+if(sect!=false && sect!= "ALL")
+{
+	curlist = document.getElementById("industryshowall").getElementsByTagName('a');
+	for(i=0;i<curlist.length;i++)
+	{
+		hl = curlist[i].attributes.getNamedItem('href');
+		ref = hl.nodeValue;
+		startIndex = ref.indexOf("industry=")+9;
+		endIndex = ref.indexOf("&",startIndex);
+		if(endIndex!=-1)
+			result = ref.slice(startIndex,endIndex);
+		else
+			result = ref.slice(startIndex);
+		if(result==sect)
+		{
+			curlist[i].className = "current";
+			break;
+		}
+	}
+}
+if(mktcap!=false && mktcap!="ALL")
+{
+	curlist = document.getElementById("marketcapshowall").getElementsByTagName('a');
+	for(i=0;i<curlist.length;i++)
+	{
+		hl = curlist[i].attributes.getNamedItem('href');
+		ref = hl.nodeValue.replace(/\+/g," ");
+		startIndex = ref.indexOf("marketcap=")+10;
+		endIndex = ref.indexOf("&",startIndex);
+		if(endIndex!=-1)
+			result = ref.slice(startIndex,endIndex);
+		else
+			result = ref.slice(startIndex);
+		if(result==mktcap)
+		{
+			curlist[i].className = "current";
+			break;
+		}
+	}
+}
+		
+</script>
+
+
+	        </div><!--end Left nav -->	
+	        <div class="breadcrumb-div-3-column">
+		        <span class="breadcrumb-text"><!--BREADCRUMB STARTS HERE! -->
+			        
+	<a href="https://www.nasdaq.com">Home</a> &gt; 
+    <a href="/screening/company-list.aspx">Company List</a> &gt; 
+     <a href="/screening/companies-by-industry.aspx">Companies By Industry </a> &gt; <b>NASDAQ</b>
+
+		        </span>
+	        </div>
+	        <div id="main-content-div"><!--main content div-->
+		        
+	<div class="sub-nav">
+		<ul class="inline noindent">
+			<li>
+				<a id="tab1" href="/screening/company-list.aspx">Company List Home</a>
+			</li>
+			<li>
+				<a id="tab2" href="/screening/companies-by-name.aspx?letter=A" target="_top">Name</a>
+			</li>
+			<li>
+				<a id="tab3" href="/screening/regions.aspx" target="_top">Region</a>
+			</li>
+			<li>
+				<a id="tab4" href="/screening/industries.aspx" target="_top" class="selected-sub-nav">Industry</a>
+			</li>
+		</ul>
+	</div>
+
+    <h1>NASDAQ Companies</h1>
+
+    <form method="post" action="./companies-by-industry.aspx?exchange=NASDAQ" id="Companiesbyname">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A4B4C600" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="XAm8i5lw3hTJjbiR+QUUpot7MavmAQlplAZ1ybaxGrDKJpd+VFeoWag6S3XSa46nZ/kC1ZN0udjcWgcCza0mlc3Z0pry8xsrZrl2Qoxao19sI2pa89hwjwi7EOhEpHa/WAEJAHAn/gNpMHslur7yG2yeDgBcoBWTU4gmQ46X7mLLGnvj5UsTkqqyTKbwi1Ufed/AU+0LhVmEF0vcE1hHYgNzbLgpx2f9IxlX3LFmX5Grp9woTAMpDdTNzCHDMAt8ZHPwBeDqV8zS4AHU+ABlQJtMXyUtJfdfsROflpkHUvHPrmgzu+2QZsWDDl/s0QoK" /> 
+        <span style="display:none"><span id="main_content_lblCurrentPage">Page: 1 of 71</span></span>
+        
+
+        <table class="fontS14px line-height marginB15px">
+            
+	            <tr>
+		            <td>
+		                <b>Exchange:&nbsp;</b>
+		            </td>
+		            <td>
+			            <input type="image" name="ctl00$main_content$exchangeremove" id="main_content_exchangeremove" src="/images/x-button.gif" />&nbsp;<a href="#">NASDAQ</a><br/>
+		            </td>
+	            </tr>
+            
+            
+	        
+	        
+        </table>
+
+        
+            <!-- the container for all of the dropdowns -->
+            <div id="dropdownsContainer" class="floatL marginB15px"> 
+                
+                    <div class="floatL">
+	                    <select name="ctl00$main_content$DropDownMarkets" id="main_content_DropDownMarkets" class="fontS14px">
+	<option selected="selected" value="NASDAQ">All NASDAQ Securities</option>
+	<option value="NGS">Global Select</option>
+	<option value="NGM">Global Market</option>
+	<option value="NCM">Capital Market</option>
+	<option value="ADR">ADR</option>
+
+</select>
+                    </div>
+                
+            </div><!-- the container for all of the dropdowns -->
+            <div class="clearB"></div>
+        
+
+        
+
+        <div id="resultsDisplay" class="floatR marginB5px">
+            
+                <small class="marginR10px">Displaying <b>1-50</b> of <b>3549</b>  results</small>
+                <img src="../images/csv-icon.gif" class="ValignM" /><a href="companies-by-industry.aspx?exchange=NASDAQ&amp;render=download" rel="nofollow"><b>Download this list</b></a>
+            
+        </div>
+
+        <div class="clearB"></div>
+
+        <div class="genTable thin">
+            <table id="CompanylistResults">
+                
+                        <thead>
+	                        <tr>
+		                        <th valign="top"><a href="companies-by-industry.aspx?exchange=NASDAQ&amp;sortname=name&amp;sorttype=1" rel="nofollow">Name</a></th>
+		                        <th valign="top"><a href="companies-by-industry.aspx?exchange=NASDAQ&amp;sortname=symbol&amp;sorttype=1" rel="nofollow">Symbol</a></th>
+		                        <th valign="top" style=""><a href="companies-by-industry.aspx?exchange=NASDAQ&amp;sortname=marketcap&amp;sorttype=1" rel="nofollow">Market Cap</a></th>
+                                <th valign="top" style="display:none"><a href="companies-by-industry.aspx?exchange=NASDAQ&amp;sortname=adrtso&amp;sorttype=1" rel="nofollow">ADR TSO</a></th>
+		                        <th valign="top"><a href="companies-by-industry.aspx?exchange=NASDAQ&amp;sortname=country&amp;sorttype=1" rel="nofollow">Country</a></th>
+		                        <th valign="top" width="50"><a href="companies-by-industry.aspx?exchange=NASDAQ&amp;sortname=ipoyear&amp;sorttype=1" rel="nofollow">IPO Year</a></th>
+		                        <th valign="top"><a href="companies-by-industry.aspx?exchange=NASDAQ&amp;sortname=industry&amp;sorttype=1" rel="nofollow">Subsector</a></th>
+	                        </tr>
+                        </thead>
+	                    <!-- begin data rows -->
+                    
+                        <tr>
+                            <td><a href="http://https://www.111.com.cn"  rel="nofollow"  target="_blank">111, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/yi">
+						            YI</a>
+					            </h3>
+			                </td>
+			                <td style="">$55.36M</td>
+                            <td style="display:none">18,765,267</td>
+			                <td>China</td>
+			                <td>2018</td>
+			                <td style="width:105px">Medical/Nursing Services</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/yi" class="marginR25px">
+				                YI Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=YI" class="marginR25px">
+				                YI Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/yi/stock-report">
+				                YI Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.1347pih.com"  rel="nofollow"  target="_blank">1347 Property Insurance Holdings, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/pih">
+						            PIH</a>
+					            </h3>
+			                </td>
+			                <td style="">$30.97M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2014</td>
+			                <td style="width:105px">Property-Casualty Insurers</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/pih" class="marginR25px">
+				                PIH Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=PIH" class="marginR25px">
+				                PIH Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/pih/stock-report">
+				                PIH Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.1347pih.com"  rel="nofollow"  target="_blank">1347 Property Insurance Holdings, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/pihpp">
+						            PIHPP</a>
+					            </h3>
+			                </td>
+			                <td style="">$18.63M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Property-Casualty Insurers</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/pihpp" class="marginR25px">
+				                PIHPP Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=PIHPP" class="marginR25px">
+				                PIHPP Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/pihpp/stock-report">
+				                PIHPP Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.180degreecapital.com"  rel="nofollow"  target="_blank">180 Degree Capital Corp.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/turn">
+						            TURN</a>
+					            </h3>
+			                </td>
+			                <td style="">$66.6M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Finance/Investors Services</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/turn" class="marginR25px">
+				                TURN Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=TURN" class="marginR25px">
+				                TURN Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/turn/stock-report">
+				                TURN Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.1800flowers.com"  rel="nofollow"  target="_blank">1-800 FLOWERS.COM, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/flws">
+						            FLWS</a>
+					            </h3>
+			                </td>
+			                <td style="">$1.18B</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>1999</td>
+			                <td style="width:105px">Other Specialty Stores</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/flws" class="marginR25px">
+				                FLWS Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=FLWS" class="marginR25px">
+				                FLWS Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/flws/stock-report">
+				                FLWS Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://https://www.pyramaxbank.com"  rel="nofollow"  target="_blank">1895 Bancorp of Wisconsin, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/bcow">
+						            BCOW</a>
+					            </h3>
+			                </td>
+			                <td style="">$45.4M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2019</td>
+			                <td style="width:105px">Banks</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/bcow" class="marginR25px">
+				                BCOW Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=BCOW" class="marginR25px">
+				                BCOW Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/bcow/stock-report">
+				                BCOW Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.1stconstitution.com"  rel="nofollow"  target="_blank">1st Constitution Bancorp (NJ)</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/fccy">
+						            FCCY</a>
+					            </h3>
+			                </td>
+			                <td style="">$151.02M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Savings Institutions</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/fccy" class="marginR25px">
+				                FCCY Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=FCCY" class="marginR25px">
+				                FCCY Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/fccy/stock-report">
+				                FCCY Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.1stsource.com"  rel="nofollow"  target="_blank">1st Source Corporation</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/srce">
+						            SRCE</a>
+					            </h3>
+			                </td>
+			                <td style="">$1.16B</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Major Banks</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/srce" class="marginR25px">
+				                SRCE Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=SRCE" class="marginR25px">
+				                SRCE Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/srce/stock-report">
+				                SRCE Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.21vianet.com"  rel="nofollow"  target="_blank">21Vianet Group, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/vnet">
+						            VNET</a>
+					            </h3>
+			                </td>
+			                <td style="">$426.25M</td>
+                            <td style="display:none">62,499,929</td>
+			                <td>China</td>
+			                <td>2011</td>
+			                <td style="width:105px">Computer Software: Programming, Data Processing</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/vnet" class="marginR25px">
+				                VNET Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=VNET" class="marginR25px">
+				                VNET Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/vnet/stock-report">
+				                VNET Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.2u.com"  rel="nofollow"  target="_blank">2U, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/twou">
+						            TWOU</a>
+					            </h3>
+			                </td>
+			                <td style="">$1.05B</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2014</td>
+			                <td style="width:105px">Computer Software: Prepackaged Software</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/twou" class="marginR25px">
+				                TWOU Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=TWOU" class="marginR25px">
+				                TWOU Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/twou/stock-report">
+				                TWOU Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.360jie.com.cn"  rel="nofollow"  target="_blank">360 Finance, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/qfin">
+						            QFIN</a>
+					            </h3>
+			                </td>
+			                <td style="">$434.65M</td>
+                            <td style="display:none">41,474,523</td>
+			                <td>China</td>
+			                <td>2018</td>
+			                <td style="width:105px">Finance: Consumer Services</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/qfin" class="marginR25px">
+				                QFIN Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=QFIN" class="marginR25px">
+				                QFIN Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/qfin/stock-report">
+				                QFIN Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.51job.com"  rel="nofollow"  target="_blank">51job, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/jobs">
+						            JOBS</a>
+					            </h3>
+			                </td>
+			                <td style="">$2.73B</td>
+                            <td style="display:none">39,442,831</td>
+			                <td>China</td>
+			                <td>2004</td>
+			                <td style="width:105px">Diversified Commercial Services</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/jobs" class="marginR25px">
+				                JOBS Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=JOBS" class="marginR25px">
+				                JOBS Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/jobs/stock-report">
+				                JOBS Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td>8i Enterprises Acquisition Corp</td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/jfk">
+						            JFK</a>
+					            </h3>
+			                </td>
+			                <td style="">$74.05M</td>
+                            <td style="display:none"></td>
+			                <td>Singapore</td>
+			                <td>2019</td>
+			                <td style="width:105px">Business Services</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/jfk" class="marginR25px">
+				                JFK Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=JFK" class="marginR25px">
+				                JFK Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/jfk/stock-report">
+				                JFK Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td>8i Enterprises Acquisition Corp</td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/jfkkr">
+						            JFKKR</a>
+					            </h3>
+			                </td>
+			                <td style="">n/a</td>
+                            <td style="display:none"></td>
+			                <td>Singapore</td>
+			                <td>2019</td>
+			                <td style="width:105px">Business Services</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/jfkkr" class="marginR25px">
+				                JFKKR Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=JFKKR" class="marginR25px">
+				                JFKKR Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/jfkkr/stock-report">
+				                JFKKR Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td>8i Enterprises Acquisition Corp</td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/jfkku">
+						            JFKKU</a>
+					            </h3>
+			                </td>
+			                <td style="">$52.6M</td>
+                            <td style="display:none"></td>
+			                <td>Singapore</td>
+			                <td>2019</td>
+			                <td style="width:105px">Business Services</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/jfkku" class="marginR25px">
+				                JFKKU Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=JFKKU" class="marginR25px">
+				                JFKKU Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/jfkku/stock-report">
+				                JFKKU Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td>8i Enterprises Acquisition Corp</td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/jfkkw">
+						            JFKKW</a>
+					            </h3>
+			                </td>
+			                <td style="">$1.73M</td>
+                            <td style="display:none"></td>
+			                <td>Singapore</td>
+			                <td>2019</td>
+			                <td style="width:105px">Business Services</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/jfkkw" class="marginR25px">
+				                JFKKW Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=JFKKW" class="marginR25px">
+				                JFKKW Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/jfkkw/stock-report">
+				                JFKKW Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://https://www.8x8.com"  rel="nofollow"  target="_blank">8x8 Inc</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/eght">
+						            EGHT</a>
+					            </h3>
+			                </td>
+			                <td style="">$2.46B</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">EDP Services</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/eght" class="marginR25px">
+				                EGHT Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=EGHT" class="marginR25px">
+				                EGHT Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/eght/stock-report">
+				                EGHT Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td>9F Inc.</td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/jfu">
+						            JFU</a>
+					            </h3>
+			                </td>
+			                <td style="">$88.82M</td>
+                            <td style="display:none">8,900,000</td>
+			                <td>China</td>
+			                <td>2019</td>
+			                <td style="width:105px">n/a</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/jfu" class="marginR25px">
+				                JFU Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=JFU" class="marginR25px">
+				                JFU Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/jfu/stock-report">
+				                JFU Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://https://www.aaon.com"  rel="nofollow"  target="_blank">AAON, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/aaon">
+						            AAON</a>
+					            </h3>
+			                </td>
+			                <td style="">$2.45B</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Industrial Machinery/Components</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/aaon" class="marginR25px">
+				                AAON Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=AAON" class="marginR25px">
+				                AAON Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/aaon/stock-report">
+				                AAON Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.abeonatherapeutics.com"  rel="nofollow"  target="_blank">Abeona Therapeutics Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/abeo">
+						            ABEO</a>
+					            </h3>
+			                </td>
+			                <td style="">$108.49M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Major Pharmaceuticals</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/abeo" class="marginR25px">
+				                ABEO Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ABEO" class="marginR25px">
+				                ABEO Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/abeo/stock-report">
+				                ABEO Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.abeonatherapeutics.com"  rel="nofollow"  target="_blank">Abeona Therapeutics Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/abeow">
+						            ABEOW</a>
+					            </h3>
+			                </td>
+			                <td style="">n/a</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Major Pharmaceuticals</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/abeow" class="marginR25px">
+				                ABEOW Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ABEOW" class="marginR25px">
+				                ABEOW Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/abeow/stock-report">
+				                ABEOW Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://https://www.interceptors.com"  rel="nofollow"  target="_blank">Ability Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/abil">
+						            ABIL</a>
+					            </h3>
+			                </td>
+			                <td style="">$4.94M</td>
+                            <td style="display:none"></td>
+			                <td>Israel</td>
+			                <td>2014</td>
+			                <td style="width:105px">Telecommunications Equipment</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/abil" class="marginR25px">
+				                ABIL Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ABIL" class="marginR25px">
+				                ABIL Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/abil/stock-report">
+				                ABIL Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.abiomed.com"  rel="nofollow"  target="_blank">ABIOMED, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/abmd">
+						            ABMD</a>
+					            </h3>
+			                </td>
+			                <td style="">$8.76B</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Medical/Dental Instruments</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/abmd" class="marginR25px">
+				                ABMD Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ABMD" class="marginR25px">
+				                ABMD Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/abmd/stock-report">
+				                ABMD Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.abraxaspetroleum.com"  rel="nofollow"  target="_blank">Abraxas Petroleum Corporation</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/axas">
+						            AXAS</a>
+					            </h3>
+			                </td>
+			                <td style="">$77.49M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Oil & Gas Production</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/axas" class="marginR25px">
+				                AXAS Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=AXAS" class="marginR25px">
+				                AXAS Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/axas/stock-report">
+				                AXAS Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.acimmune.com"  rel="nofollow"  target="_blank">AC Immune SA</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/aciu">
+						            ACIU</a>
+					            </h3>
+			                </td>
+			                <td style="">$363.49M</td>
+                            <td style="display:none"></td>
+			                <td>Switzerland</td>
+			                <td>2016</td>
+			                <td style="width:105px">Major Pharmaceuticals</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/aciu" class="marginR25px">
+				                ACIU Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACIU" class="marginR25px">
+				                ACIU Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/aciu/stock-report">
+				                ACIU Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.acacia-inc.com"  rel="nofollow"  target="_blank">Acacia Communications, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/acia">
+						            ACIA</a>
+					            </h3>
+			                </td>
+			                <td style="">$2.63B</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2016</td>
+			                <td style="width:105px">Semiconductors</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acia" class="marginR25px">
+				                ACIA Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACIA" class="marginR25px">
+				                ACIA Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acia/stock-report">
+				                ACIA Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.acaciaresearch.com"  rel="nofollow"  target="_blank">Acacia Research Corporation</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/actg">
+						            ACTG</a>
+					            </h3>
+			                </td>
+			                <td style="">$143.38M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Multi-Sector Companies</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/actg" class="marginR25px">
+				                ACTG Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACTG" class="marginR25px">
+				                ACTG Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/actg/stock-report">
+				                ACTG Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.acadiahealthcare.com"  rel="nofollow"  target="_blank">Acadia Healthcare Company, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/achc">
+						            ACHC</a>
+					            </h3>
+			                </td>
+			                <td style="">$2.44B</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Medical Specialities</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/achc" class="marginR25px">
+				                ACHC Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACHC" class="marginR25px">
+				                ACHC Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/achc/stock-report">
+				                ACHC Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.acadia-pharm.com"  rel="nofollow"  target="_blank">ACADIA Pharmaceuticals Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/acad">
+						            ACAD</a>
+					            </h3>
+			                </td>
+			                <td style="">$4.28B</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>1985</td>
+			                <td style="width:105px">Major Pharmaceuticals</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acad" class="marginR25px">
+				                ACAD Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACAD" class="marginR25px">
+				                ACAD Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acad/stock-report">
+				                ACAD Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td>Acamar Partners Acquisition Corp.</td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/acam">
+						            ACAM</a>
+					            </h3>
+			                </td>
+			                <td style="">$374.71M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2019</td>
+			                <td style="width:105px">Business Services</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acam" class="marginR25px">
+				                ACAM Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACAM" class="marginR25px">
+				                ACAM Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acam/stock-report">
+				                ACAM Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td>Acamar Partners Acquisition Corp.</td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/acamu">
+						            ACAMU</a>
+					            </h3>
+			                </td>
+			                <td style="">n/a</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2019</td>
+			                <td style="width:105px">Business Services</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acamu" class="marginR25px">
+				                ACAMU Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACAMU" class="marginR25px">
+				                ACAMU Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acamu/stock-report">
+				                ACAMU Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td>Acamar Partners Acquisition Corp.</td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/acamw">
+						            ACAMW</a>
+					            </h3>
+			                </td>
+			                <td style="">n/a</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2019</td>
+			                <td style="width:105px">Business Services</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acamw" class="marginR25px">
+				                ACAMW Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACAMW" class="marginR25px">
+				                ACAMW Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acamw/stock-report">
+				                ACAMW Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.acastipharma.com"  rel="nofollow"  target="_blank">Acasti Pharma, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/acst">
+						            ACST</a>
+					            </h3>
+			                </td>
+			                <td style="">$157.93M</td>
+                            <td style="display:none"></td>
+			                <td>Canada</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Major Pharmaceuticals</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acst" class="marginR25px">
+				                ACST Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACST" class="marginR25px">
+				                ACST Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acst/stock-report">
+				                ACST Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.acceleratediagnostics.com"  rel="nofollow"  target="_blank">Accelerate Diagnostics, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/axdx">
+						            AXDX</a>
+					            </h3>
+			                </td>
+			                <td style="">$997.09M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Biotechnology: Laboratory Analytical Instruments</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/axdx" class="marginR25px">
+				                AXDX Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=AXDX" class="marginR25px">
+				                AXDX Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/axdx/stock-report">
+				                AXDX Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td>Accelerated Pharma, Inc.</td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/accp">
+						            ACCP</a>
+					            </h3>
+			                </td>
+			                <td style="">n/a</td>
+                            <td style="display:none"></td>
+			                <td>n/a</td>
+			                <td>n/a</td>
+			                <td style="width:105px">n/a</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/accp" class="marginR25px">
+				                ACCP Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACCP" class="marginR25px">
+				                ACCP Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/accp/stock-report">
+				                ACCP Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.acceleronpharma.com"  rel="nofollow"  target="_blank">Acceleron Pharma Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/xlrn">
+						            XLRN</a>
+					            </h3>
+			                </td>
+			                <td style="">$2.43B</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2013</td>
+			                <td style="width:105px">Biotechnology: Biological Products (No Diagnostic Substances)</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/xlrn" class="marginR25px">
+				                XLRN Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=XLRN" class="marginR25px">
+				                XLRN Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/xlrn/stock-report">
+				                XLRN Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.accuray.com"  rel="nofollow"  target="_blank">Accuray Incorporated</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/aray">
+						            ARAY</a>
+					            </h3>
+			                </td>
+			                <td style="">$249.11M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2007</td>
+			                <td style="width:105px">Medical/Dental Instruments</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/aray" class="marginR25px">
+				                ARAY Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ARAY" class="marginR25px">
+				                ARAY Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/aray/stock-report">
+				                ARAY Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.acelrx.com"  rel="nofollow"  target="_blank">AcelRx Pharmaceuticals, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/acrx">
+						            ACRX</a>
+					            </h3>
+			                </td>
+			                <td style="">$180.32M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2011</td>
+			                <td style="width:105px">Major Pharmaceuticals</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acrx" class="marginR25px">
+				                ACRX Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACRX" class="marginR25px">
+				                ACRX Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acrx/stock-report">
+				                ACRX Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://https://www.acertx.com"  rel="nofollow"  target="_blank">Acer Therapeutics Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/acer">
+						            ACER</a>
+					            </h3>
+			                </td>
+			                <td style="">$21.1M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Major Pharmaceuticals</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acer" class="marginR25px">
+				                ACER Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACER" class="marginR25px">
+				                ACER Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acer/stock-report">
+				                ACER Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.achievelifesciences.com"  rel="nofollow"  target="_blank">Achieve Life Sciences, Inc. </a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/achv">
+						            ACHV</a>
+					            </h3>
+			                </td>
+			                <td style="">$14.66M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Biotechnology: In Vitro & In Vivo Diagnostic Substances</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/achv" class="marginR25px">
+				                ACHV Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACHV" class="marginR25px">
+				                ACHV Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/achv/stock-report">
+				                ACHV Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.achillion.com"  rel="nofollow"  target="_blank">Achillion Pharmaceuticals, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/achn">
+						            ACHN</a>
+					            </h3>
+			                </td>
+			                <td style="">$666.34M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2006</td>
+			                <td style="width:105px">Major Pharmaceuticals</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/achn" class="marginR25px">
+				                ACHN Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACHN" class="marginR25px">
+				                ACHN Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/achn/stock-report">
+				                ACHN Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.aciworldwide.com"  rel="nofollow"  target="_blank">ACI Worldwide, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/aciw">
+						            ACIW</a>
+					            </h3>
+			                </td>
+			                <td style="">$3.43B</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Computer Software: Prepackaged Software</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/aciw" class="marginR25px">
+				                ACIW Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACIW" class="marginR25px">
+				                ACIW Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/aciw/stock-report">
+				                ACIW Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.aclaristx.com"  rel="nofollow"  target="_blank">Aclaris Therapeutics, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/acrs">
+						            ACRS</a>
+					            </h3>
+			                </td>
+			                <td style="">$36.12M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2015</td>
+			                <td style="width:105px">Major Pharmaceuticals</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acrs" class="marginR25px">
+				                ACRS Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACRS" class="marginR25px">
+				                ACRS Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acrs/stock-report">
+				                ACRS Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.acmrcsh.com"  rel="nofollow"  target="_blank">ACM Research, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/acmr">
+						            ACMR</a>
+					            </h3>
+			                </td>
+			                <td style="">$225.68M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2017</td>
+			                <td style="width:105px">Industrial Machinery/Components</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acmr" class="marginR25px">
+				                ACMR Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACMR" class="marginR25px">
+				                ACMR Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acmr/stock-report">
+				                ACMR Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.acnb.com"  rel="nofollow"  target="_blank">ACNB Corporation</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/acnb">
+						            ACNB</a>
+					            </h3>
+			                </td>
+			                <td style="">$247.8M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Major Banks</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acnb" class="marginR25px">
+				                ACNB Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACNB" class="marginR25px">
+				                ACNB Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acnb/stock-report">
+				                ACNB Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.acorda.com"  rel="nofollow"  target="_blank">Acorda Therapeutics, Inc.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/acor">
+						            ACOR</a>
+					            </h3>
+			                </td>
+			                <td style="">$129.89M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2006</td>
+			                <td style="width:105px">Biotechnology: Biological Products (No Diagnostic Substances)</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acor" class="marginR25px">
+				                ACOR Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACOR" class="marginR25px">
+				                ACOR Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acor/stock-report">
+				                ACOR Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.acttel.com"  rel="nofollow"  target="_blank">Act II Global Acquisition Corp.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/actt">
+						            ACTT</a>
+					            </h3>
+			                </td>
+			                <td style="">$367.55M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2019</td>
+			                <td style="width:105px">Business Services</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/actt" class="marginR25px">
+				                ACTT Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACTT" class="marginR25px">
+				                ACTT Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/actt/stock-report">
+				                ACTT Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.acttel.com"  rel="nofollow"  target="_blank">Act II Global Acquisition Corp.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/acttu">
+						            ACTTU</a>
+					            </h3>
+			                </td>
+			                <td style="">n/a</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2019</td>
+			                <td style="width:105px">Business Services</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acttu" class="marginR25px">
+				                ACTTU Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACTTU" class="marginR25px">
+				                ACTTU Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acttu/stock-report">
+				                ACTTU Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.acttel.com"  rel="nofollow"  target="_blank">Act II Global Acquisition Corp.</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/acttw">
+						            ACTTW</a>
+					            </h3>
+			                </td>
+			                <td style="">$18.49M</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>2019</td>
+			                <td style="width:105px">Business Services</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acttw" class="marginR25px">
+				                ACTTW Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ACTTW" class="marginR25px">
+				                ACTTW Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/acttw/stock-report">
+				                ACTTW Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://www.activisionblizzard.com"  rel="nofollow"  target="_blank">Activision Blizzard, Inc</a></td>
+		                    <td>
+					            <h3>
+						            <a href="/symbol/atvi">
+						            ATVI</a>
+					            </h3>
+			                </td>
+			                <td style="">$35.79B</td>
+                            <td style="display:none"></td>
+			                <td>United States</td>
+			                <td>n/a</td>
+			                <td style="width:105px">Computer Software: Prepackaged Software</td>
+		                </tr>
+                        <tr>
+			                <td class="quick-links" colspan="6">
+				                <img src="/images/quotes_qw.gif" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/atvi" class="marginR25px">
+				                ATVI Stock Quote</a>
+				
+				                <img src="/images/bullish-icon.gif" class="ValignM" width="15" height="15"/>
+				                <a href="https://community.nasdaq.com/community-ratings.aspx?stockticker=ATVI" class="marginR25px">
+				                ATVI Ratings</a>			
+				
+				                <img src="/images/stockReportIcon.png" class="ValignM" width="15" height="15"/>
+				                <a href="/symbol/atvi/stock-report">
+				                ATVI Stock Report</a> &nbsp;
+			                </td>
+	                    </tr>
+                    
+            </table>
+        </div>
+
+        <div class="floatL marginT10px">
+            <small>*IPO year information is not available for stocks prior to 1970.</small>
+        </div>
+
+		<div id="main_content_pagesizelist" class="floatR marginT10px">
+	
+		    <select name="ctl00$main_content$lstpagesize" id="main_content_lstpagesize" class="fontS14px">
+		<option selected="selected" value="50">50 Items Per Page</option>
+		<option value="100">100 Items Per Page</option>
+		<option value="150">150 Items Per Page</option>
+		<option value="200">200 Items Per Page</option>
+
+	</select>
+        
+</div>
+
+        <div class="clearB"></div>
+
+        <div id="main_content_pnpageview">
+	
+            <div id="pagerContainer"> 
+                <ul class="pager"><li><span id="main_content_lb_FirstPage" class="pagerlinkd">&lt;&lt; first</span></li><li><span id="main_content_lb_PreviousPage" class="pagerlinkd">&lt; previous</span></li><li><span id="main_content_lb_1" class="pagerlinkd">1</span></li><li><a href="https://www.nasdaq.com/screening/companies-by-industry.aspx?exchange=NASDAQ&page=2" class="pagerlink">2</a></li><li><a href="https://www.nasdaq.com/screening/companies-by-industry.aspx?exchange=NASDAQ&page=3" class="pagerlink">3</a></li><li><a href="https://www.nasdaq.com/screening/companies-by-industry.aspx?exchange=NASDAQ&page=4" class="pagerlink">4</a></li><li><a href="https://www.nasdaq.com/screening/companies-by-industry.aspx?exchange=NASDAQ&page=5" class="pagerlink">5</a></li><li><a href="https://www.nasdaq.com/screening/companies-by-industry.aspx?exchange=NASDAQ&page=20" class="pagerlink">20</a></li><li><a href="https://www.nasdaq.com/screening/companies-by-industry.aspx?exchange=NASDAQ&page=40" class="pagerlink">40</a></li><li><a href="https://www.nasdaq.com/screening/companies-by-industry.aspx?exchange=NASDAQ&page=60" class="pagerlink">60</a></li><li><a href="https://www.nasdaq.com/screening/companies-by-industry.aspx?exchange=NASDAQ&page=2" id="main_content_lb_NextPage" class="pagerlink">next &gt;</a></li><li><a href="https://www.nasdaq.com/screening/companies-by-industry.aspx?exchange=NASDAQ&page=71" id="main_content_lb_LastPage" class="pagerlink">last &gt;&gt;</a></li></ul>
+            </div>
+        
+</div>
+        <div class="clearB"></div>
+    </form>
+
+	        </div><!--end main content div-->
+            <div id="right-column-div" class="marginT0p">	
+	            
+    <div id="sticky-container1">
+	    <script type="text/javascript">makeAd('5', '160x600,300x250,300x600', is_dartSite, is_dartZone, '', '');</script>	
+    </div>
+
+            </div><!--end right-column-div-->
+        </div><!--end content div-->
+		
+        <!-- START Google Ads includes/footer_googAd.inc-->
+
+<div class="clearB"></div>
+<br /><br />
+
+<div class="footer_googAd marginLAuto marginRAuto" style="width:728px;">
+  <div id="footerAd"></div><!-- placeholder for footer ad -->
+  <script>
+    footerAdDisplay();
+  </script>
+</div>
+
+<!-- END Google Ads includes/footer_googAd.inc-->
+
+
+
+		
+		<div id="back-to-top" title="Scroll back to top" onclick="triggerAsyncOmnitureClickEvent('master:global-object:back-to-top')"><span></span></div>
+    </div><!--end wrap-->
+		
+	<!-- begin includes/fixedFooter.inc-->
+<!--// begin footer -->
+<footer class="site__footer">
+	<div class="site__footer--primary">
+		<div class="wrapper">
+			<a href="/" class="logo">
+				<div></div>
+			</a>
+			<div class="floatR">
+				<a href="https://www.facebook.com/NASDAQ" class="icon icon-facebook">
+					<span></span>
+				</a>
+				<a href="https://twitter.com/nasdaq" class="icon icon-twitter">
+					<span></span>
+				</a>
+				<a href="https://plus.google.com/+nasdaq" class="icon icon-google-plus">
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="site__footer--secondary">
+		<div class="wrapper">
+			<nav class="site__footer__nav">
+				<ul>
+					<li><a href="/" title="Nasdaq"><strong>Nasdaq.com</strong></a></li>
+					<li><a href="/quotes/company-news.aspx" title="Company News">Company News</a><span>&#47;</span></li>
+					<li><a href="/services/annual-reports.aspx" title="Annual Report">Annual Report</a><span>&#47;</span></li>
+					<li><a href="/help/contact-information.aspx" title="Contact">Contact</a><span>&#47;</span></li>
+          <li><a href="https://business.nasdaq.com/discover/careers/index.html" title="Careers">Careers</a><span>&#47;</span></li>
+					<li><a href="/help/nasdaq-advertising.aspx" title="Advertise on Nasdaq.com">Advertise on Nasdaq.com</a></li>
+				</ul>
+				<ul class="lighter">
+					<li><a href="/about/terms.aspx" title="Terms of Use">Terms of Use</a><span>&#47;</span></li>
+					<li><a href="https://business.nasdaq.com/privacy-statement/" title="Privacy Policy">Privacy Policy</a><span>&#47;</span></li>
+					<li><a href="/help/sitemap.aspx" title="Sitemap">Sitemap</a><span>&#47;</span></li>
+					<li><a href="/investing/glossary/" title="Glossary">Glossary</a><span>&#47;</span></li>
+					<li><a href="/feedback/" title="Feedback">Feedback</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</footer>
+<!--// end footer -->
+<!-- begin lightbox backdrop -->
+<table class="backdrop" id="backdrop">
+	<tr>
+		<td>
+			<!-- begin lightboxness -->
+			<div class="lightbox edit-stocks" id="edit-stocks">
+				<!-- close button-->
+				<span class="close">CLOSE<span class="x">X</span></span>
+				<div class="floatL">
+					<h2><center>Edit Favorites</center></h2>
+					<!-- text -->
+					<p>Enter up to 25 symbols separated by commas or spaces in the text box below. These symbols will be available during your session for use on applicable pages.</p>
+					<!-- input box -->
+					<div class="floatL">
+						<textarea onkeypress="if(event.keyCode ==13){nasdaqIndexRow.myListGo()}else if(event.keyCode == 27){$('.close').click();}" id="myListInput" name="myListInput" cols="35" rows="3" class="fontS14px"></textarea>
+					</div>
+					<!-- right side controls -->
+					<div class="floatL marginL10px">
+						<a href="javascript:void(0)" class="lightgreen-button marginB5px TalignC" onclick="nasdaqIndexRow.myListGo();">Update</a>
+						<br />
+						<a href="javascript:void(0)" class="red-button" onclick="nasdaqIndexRow.clearMyList();">Clear List</a>
+					</div>
+				</div>
+			</div>
+			<!-- end lightboxness -->
+			<!-- begin lightboxness -->
+			<div class="lightbox stock-searches" id="stock-searches">
+				<!-- close button-->
+				<span class="close">CLOSE<span class="x">X</span></span>
+				<h2>Customize your NASDAQ.com experience</h2>
+				<b>Background Color Selector</b>
+				<br />
+				<span>Select the background color of your choice:</span>
+				<div class="clearB"></div>
+				<div id="BgSelector">
+					<div>
+						<div class="BgSelector-1">
+							<div class="floatL">
+								<input type="radio" name="themepreference" value="blackg" onclick="updateSiteTheme(this.value)">&nbsp;Black
+							</div>
+							<div class="BgSelector-color"></div>
+						</div>
+						<div class="clearB"></div>
+						<div class="BgSelector-2">
+							<div class="floatL">
+								<input type="radio" name="themepreference" value="slateg" onclick="updateSiteTheme(this.value)">&nbsp;Slate Gray
+							</div>
+							<div class="BgSelector-color"></div>
+						</div>
+					</div>
+					<div>
+						<div class="BgSelector-3">
+							<div class="floatL">
+								<input type="radio" name="themepreference" value="lightg" onclick="updateSiteTheme(this.value)">&nbsp;Light Gray
+							</div>
+							<div class="BgSelector-color"></div>
+						</div>
+						<div class="clearB"></div>
+						<div class="BgSelector-4">
+							<div class="floatL">
+								<input type="radio" name="themepreference" value="grayb" onclick="updateSiteTheme(this.value)">&nbsp;Gray Blue
+							</div>
+							<div class="BgSelector-color"></div>
+						</div>
+					</div>
+				</div>
+				<div class="clearB"></div>
+				<hr /><br />
+				<b>Quote Search</b>
+				<br />
+				<span>Select a default target page for your quote search:</span>
+				<div id="QuoteSetting">
+					<div>
+						<input type="radio" name="quotepreference" value="realtime" onclick="Nasdaq_Quotesearch.confirmUserPref(this.value)">
+						&nbsp;Real-Time<br />
+						<input type="radio" name="quotepreference" value="afthours" onclick="Nasdaq_Quotesearch.confirmUserPref(this.value)">
+						&nbsp;After Hours<br />
+						<input type="radio" name="quotepreference" value="premkt" onclick="Nasdaq_Quotesearch.confirmUserPref(this.value)">
+						&nbsp;Pre-Market<br />
+						<input type="radio" name="quotepreference" value="compnews" onclick="Nasdaq_Quotesearch.confirmUserPref(this.value)">&nbsp;News
+					</div>
+					<div>
+						<input type="radio" name="quotepreference" value="flash" onclick="Nasdaq_Quotesearch.confirmUserPref(this.value)">
+						&nbsp;Flash Quote<br />
+						<input type="radio" name="quotepreference" value="summary" onclick="Nasdaq_Quotesearch.confirmUserPref(this.value)">
+						&nbsp;Summary Quote<br />
+						<input type="radio" name="quotepreference" value="dyncharts" onclick="Nasdaq_Quotesearch.confirmUserPref(this.value)">
+						&nbsp;Interactive Charts<br />
+						<input type="radio" name="quotepreference" value="default" onclick="Nasdaq_Quotesearch.confirmUserPref(this.value)">
+						&nbsp;Default Setting<br />
+					</div>
+				</div>
+				<div class="clearB"></div>
+				<span>
+					Please note that once you make your selection, it will apply to all future visits to NASDAQ.com.
+					If, at any time, you are interested in reverting to our default settings, please select Default Setting above.
+					<br /><br />
+					If you have any questions or encounter any issues in changing your default settings, please email <a href="mailto:isfeedback@nasdaq.com?Subject=Default%20Settings%20Inquiry">isfeedback@nasdaq.com</a>.
+				</span>
+			</div>
+			<!-- end lightboxness -->
+			<!-- begin lightboxness -->
+			<div class="lightbox" id="confirm">
+				<!-- close button-->
+				<span class="close">CLOSE<span class="x">X</span></span>
+				<h4>Please confirm your selection:</h4>
+				<p>
+					You have selected to change your default setting for the Quote Search. This will now be your default target page;
+					unless you change your configuration again, or you delete your
+					cookies. <b>Are you sure you want to change your settings?</b>
+				</p>
+				<div>
+					<button class="floatL"  onclick="Nasdaq_Quotesearch.confirmHandler('defaultQuote', true)">YES</button>
+					<button class="floatR"  onclick="Nasdaq_Quotesearch.confirmHandler('defaultQuote', false)">NO</button>
+				</div>
+			</div>
+			<!-- end lightboxness -->
+		</td>
+	</tr>
+</table>
+<!-- end lightbox backdrop -->
+<table class="backdrop" id="globalCustomModal">
+	<tr>
+		<td>
+            <!-- begin lightboxness -->
+            <div class="lightbox" id="adBlockMsg">
+				<!-- close button-->
+				<span class="close" onclick="close_global_modal()">CLOSE<span class="x">X</span></span>
+				<!-- <h2><center>We have a favor to ask</center></h2> -->
+				<!-- text -->
+				<p id="adBlockMsgText">Please disable your ad blocker (or <a href="/help/adblock-instructions.aspx">update your settings</a> to ensure that javascript and cookies are enabled), so that we can continue to provide you with the first-rate market news and data you've come to expect from us.</p>
+			</div>
+            <!-- end lightboxness -->
+			<!-- begin lightboxness -->
+            <div class="lightbox" id="interstitialAdContainer" style="width:705px;height:575px">
+				<!-- close button-->
+				<span class="close" onclick="close_global_modal()">CLOSE<span class="x">X</span></span>
+				<!-- <h2><center>Sponsor Message</center></h2> -->
+				<!-- text -->
+				<p id="interstitialContainer"></p>
+			</div>
+            <!-- end lightboxness -->
+         </td>
+	</tr>
+</table>
+
+<!-- Omniture code -->
+
+<!--********************BEGIN  ../includes/omniture.inc***********************-->
+
+<!-- SiteCatalyst code version: H.1.
+Copyright 1997-2005 Omniture, Inc. More info available at https://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="/includes/s_code-072016v1.js?v=03012016"></script>
+
+
+<script type="text/javascript" language="JavaScript">
+
+<!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+
+<noscript><img
+src="https://nasdaq.122.2O7.net/b/ss/nasdaqprod/1/H.1--NS/0"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.1. -->
+<!-- setSectionName() moved to js file: masthead_default.js -->
+
+
+<!--*********************End  ../includes/omniture.inc*******************************-->
+
+
+<script type="text/javascript">
+//<![CDATA[
+setSectionName(propVar);
+//]]>
+</script>
+
+<!-- Begin BlueKai Tag --> 
+<iframe name="__bkframe" height="0" width="0" frameborder="0" style="display:none;position:absolute;clip:rect(0px 0px 0px 0px)" src="about:blank"></iframe> 
+<script type="text/javascript" src="https://tags.bkrtx.com/js/bk-coretag.js"></script> 
+<script type="text/javascript">
+
+bk_addPageCtx('is_dartSite', (typeof(is_dartSite)!=='undefined')?is_dartSite:'');
+bk_addPageCtx('is_dartZone', (typeof(is_dartZone)!=='undefined')?is_dartZone:'');
+bk_addPageCtx('propVar', (typeof(propVar)!=='undefined')?propVar:'');
+bk_addPageCtx('propVar15', (typeof(propVar15)!=='undefined')?propVar15:'');
+bk_addPageCtx('SymbolType', (typeof(SymbolType)!=='undefined')?SymbolType:'');
+bk_addPageCtx('StockIndustry', (typeof(StockIndustry)!=='undefined')?StockIndustry:'');
+bk_addPageCtx('ArticlePrimaryCategory', (typeof(ArticlePrimaryCategory)!=='undefined')?ArticlePrimaryCategory:'');
+ 
+bk_doJSTag(31843, 1); 
+</script> 
+<!-- End BlueKai Tag -->
+
+<!-- begin Enerprise Florida survey -->
+<script>
+/*
+(function(){
+if(document.referrer=="https://www"+host_Extension+".nasdaq.com/markets/ipos/" 
+	&& document.location.href!="https://www"+host_Extension+".nasdaq.com/markets/ipos/"
+	&& get_cookie_value("EnterpriseFloridaSurvey")==false)
+{
+	set_cookie_value("EnterpriseFloridaSurvey","true",3);
+	(function(t,e,s,n){var o,c,a;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),c=o[o.length-1],a=e.createElement(s),a.type="text/javascript",a.async=!0,a.id=n,a.src=["https:"===location.protocol?"https://":"https://","widget.surveymonkey.com/collect/website/js/DrqdalJhvDd5ACgCO0mDpO1m7_2FEv_2BICPaYzBfwyQJ8_2BsY6t3mPJl0hh2FGypTiFu.js"].join(""),c.parentNode.insertBefore(a,c))})(window,document,"script","smcx-sdk");
+}
+else if(document.location.href=="https://www"+host_Extension+".nasdaq.com/markets/gold.aspx"
+	&& get_cookie_value("EnterpriseFloridaSurvey")==false)
+  {
+  set_cookie_value("EnterpriseFloridaSurvey","true",7);
+  (function(e,t,n,o){var s,c,i;e.SMCX=e.SMCX||[],t.getElementById(o)||(s=t.getElementsByTagName(n),c=s[s.length-1],i=t.createElement(n),i.type="text/javascript",i.async=!0,i.id=o,i.src=["https:"===location.protocol?"https://":"https://","widget.surveymonkey.com/collect/website/js/zlERY9yXVqREVYHr6ZdqhDNMqk2NLii_2Fefbn4hZPEGkz2TEDYuhOlBtXpQe_2FgiXz.js"].join(""),c.parentNode.insertBefore(i,c))})(window,document,"script","smcx-sdk");
+  }
+  })();
+  */
+
+  //deferred actions
+
+  //deferred actions
+  $(window).on('load', function () {
+  addScript("/includes/nasdaqdeferred.min-04242018v1.js", true, "deferredActions()");
+  });
+
+</script>
+<!-- end Enterprise Florida survey -->
+
+<!-- end includes/fixedFooter.inc-->
+
+
+<!-- START page bottom script -->
+    <script type="text/javascript">
+    $(document).ready(function () {
+    setTimeout(function () {
+        initStickyContent();
+    }, 5000);
+});
+
+function initStickyContent() {
+    var menuHeight = 85; //masthead height; padding between sticky content and top of the screen
+    var bottomElementSelector = '#footerAd';//bottom boundary element which sticky content won't move past vertically
+    var footerOffset = 0; //padding between sticky content and bottom boundary element
+    var content1Selector = '#sticky-container1';//initial sticky element
+    var content1Height = 411;//height of initial sticky element
+
+    function initStickyContent1() {
+        var stickyContainer = $(content1Selector);
+        if (stickyContainer.length == 0) return;
+        var stickyTop = stickyContainer.offset().top - menuHeight;
+        var maxBottom = $(bottomElementSelector).offset().top - footerOffset;
+        //define scroll distance, bottom point is based on scroll distance            
+        var bottom = $(bottomElementSelector).offset().top - footerOffset - content1Height - menuHeight - 600;
+        //if scroll distance goes into footer, readjust
+        if (bottom > maxBottom) bottom = maxBottom;
+        var currentlyStickied = false;
+        var disableSticky = false;
+        var distance = bottom - stickyTop - content1Height - menuHeight;
+        $(window).scroll(function () {
+            var windowTop;
+            if (!disableSticky) {
+                windowTop = $(window).scrollTop();
+                if (stickyTop < windowTop) {
+                    if (windowTop < bottom) {
+                        if (!currentlyStickied) {
+                            //scroll position is past sticky point but above bottom point and content is currently non-sticky
+                            //go from non-sticky to sticky
+                            stickyContainer.css({ position: 'fixed', top: menuHeight + "px" });
+                            currentlyStickied = true;
+                        }
+                    }
+                    else {
+                        if (currentlyStickied) {
+                            //scroll position is past sticky point and past bottom point and content is currently sticky
+                            //go from sticky to original position and disable future stickiness
+                            stickyContainer.css({ position: 'fixed', top: (menuHeight - 860) + "px" });
+                            currentlyStickied = false;
+                        }
+                    }
+                }
+                else {
+                    if (currentlyStickied) {
+                        //scroll position is above sticky point but content is currently sticky
+                        //go from sticky to original position
+                        stickyContainer.css('position', 'static');
+                        currentlyStickied = false;
+                    }
+                }
+            }
+        });
+    }
+
+    initStickyContent1();
+}
+</script>
+<!-- END page bottom script -->
+
+
+</body>	
+</html>
